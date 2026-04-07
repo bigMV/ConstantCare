@@ -1,0 +1,146 @@
+{
+  "nav": {
+    "services": "Services",
+    "philosophy": "Our Approach",
+    "testimonials": "Testimonials",
+    "reviews": "Reviews",
+    "faq": "FAQ",
+    "cta": "Contact Us"
+  },
+  "hero": {
+    "eyebrow": "PROFESSIONAL CLEANING IN OSLO",
+    "title": "Premium Cleaning Services",
+    "title_part1": "Premium",
+    "title_part2": "Cleaning Services",
+    "description": "Reliable and high-quality cleaning for homes and offices. We focus on precision, quality, and your complete satisfaction.",
+    "cta": "Book Now"
+  },
+  "pillars": {
+    "sustainable": {
+      "title": "Sustainable",
+      "text": "We use eco-friendly, plant-based cleaning solutions that are safe for everyone."
+    },
+    "ethical": {
+      "title": "Ethical",
+      "text": "Our team consists of salaried professionals with full benefits, ensuring reliable service."
+    },
+    "detail": {
+      "title": "Quality",
+      "text": "We pay close attention to every detail, ensuring your space is always spotless and organized."
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "residential": {
+      "title": "Home Cleaning",
+      "text": "Standard cleaning services tailored for modern homes."
+    },
+    "commercial": {
+      "title": "Office Cleaning",
+      "text": "Professional hygiene solutions for businesses and studios."
+    },
+    "deep": {
+      "title": "Deep Cleaning",
+      "text": "A comprehensive deep clean for a complete reset of your environment."
+    }
+  },
+  "benefits": {
+    "vetted": {
+      "title": "Vetted Staff",
+      "text": "Rigorous background checks and professional training for all employees."
+    },
+    "eco": {
+      "title": "Eco-friendly",
+      "text": "Safe, biodegradable formulas for children, pets, and all surfaces."
+    },
+    "satisfaction": {
+      "title": "Guaranteed Results",
+      "text": "A flawless finish or a complimentary return within 24 hours."
+    },
+    "pricing": {
+      "title": "Flat Rates",
+      "text": "Transparent, upfront pricing with no hidden fees."
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Details about our services and policies.",
+    "items": [
+      {
+        "q": "What cleaning products do you use?",
+        "a": "We use eco-friendly, plant-based formulas that are biodegradable and safe for all surfaces, children, and pets."
+      },
+      {
+        "q": "Do I need to be present during the cleaning?",
+        "a": "No, most of our clients provide key access. Our staff are trained to work independently and respect your privacy."
+      },
+      {
+        "q": "How do I book a cleaning session?",
+        "a": "You can book directly via our contact form or by phone. We will confirm your appointment and provide a transparent quote within 24 hours."
+      },
+      {
+        "q": "Are your cleaning agents safe for pets?",
+        "a": "Yes, we exclusively use 100% organic, non-toxic agents that are completely safe for pets, children, and people with allergies."
+      },
+      {
+        "q": "What areas in Oslo do you serve?",
+        "a": "We provide premium cleaning services across all major districts of Oslo and the surrounding Viken area."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "form_title": "Ready for a reset?",
+    "address": "Oslo, Norway",
+    "phone": "+47 22 33 44 55",
+    "email": "post{'@'}ankarenhold.no",
+    "social_title": "Follow Us"
+  },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "sustainability": "Sustainability",
+    "developed_by": "Developed By Mariusv.dev",
+    "company": "COMPANY",
+    "details": "DETAILS",
+    "stay_in_touch": "STAY IN TOUCH",
+    "oslo": "OSLO",
+    "rights": "© 2026 ANKARENHOLD AS. ALL RIGHTS RESERVED."
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "Trusted by home and business owners in Oslo.",
+    "items": [
+      {
+        "quote": "Anka Renhold AS stepped in at very short notice. I was extremely impressed by their thoroughness; they truly know their craft. Communication was seamless from start to finish.",
+        "author": "Karoline H.",
+        "role": "Private Customer"
+      },
+      {
+        "quote": "This is the second time I've used Anka Renhold. The work quality is fantastic, and they are incredibly pleasant to deal with! Highly recommended for anyone needing professional cleaning.",
+        "author": "Magnus Solberg",
+        "role": "Consultant"
+      },
+      {
+        "quote": "I have never had such clean windows before! I warmly recommend Anka Renhold for their quick communication and superb window cleaning quality. Tidy, friendly, and reliable.",
+        "author": "Siri Jensen",
+        "role": "Homeowner"
+      },
+      {
+        "quote": "They delivered high quality on my move-out cleaning. They handled specific requirements with ease and completed the work efficiently and with great precision. Very happy with the result!",
+        "author": "Anders Berg",
+        "role": "General Manager"
+      },
+      {
+        "quote": "Very satisfied! The entire process was orderly and they are super friendly. Efficient execution with no hidden costs like parking or tolls. Just an honest hourly rate!",
+        "author": "Emilie Foss",
+        "role": "Architect"
+      },
+      {
+        "quote": "Excellent communication before and during the job. They do very thorough work and are both efficient and flexible. The whole experience was very professional and we are very pleased.",
+        "author": "Thomas Dahl",
+        "role": "Studio Owner"
+      }
+    ]
+  }
+}

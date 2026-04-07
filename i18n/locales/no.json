@@ -1,0 +1,146 @@
+{
+  "nav": {
+    "services": "Tjenester",
+    "philosophy": "Vår tilnærming",
+    "testimonials": "Anmeldelser",
+    "reviews": "Anmeldelser",
+    "faq": "FAQ",
+    "cta": "Kontakt oss"
+  },
+  "hero": {
+    "eyebrow": "PROFESJONELT RENHOLD I OSLO",
+    "title": "Premium Renholdstjenester",
+    "title_part1": "Premium",
+    "title_part2": "Renholdstjenester",
+    "description": "Pålitelig renhold av høy kvalitet for hjem og kontor. Vi fokuserer på presisjon, kvalitet og din tilfredshet.",
+    "cta": "Bestill nå"
+  },
+  "pillars": {
+    "sustainable": {
+      "title": "Bærekraftig",
+      "text": "Vi bruker miljøvennlige, plantebaserte løsninger som er trygge for alle."
+    },
+    "ethical": {
+      "title": "Etisk",
+      "text": "Vårt team består av fast ansatte med gode betingelser, som sikrer pålitelig service."
+    },
+    "detail": {
+      "title": "Kvalitet",
+      "text": "Vi legger stor vekt på detaljer og sørger for at rommet ditt alltid er rent og ryddig."
+    }
+  },
+  "services": {
+    "title": "Våre Tjenester",
+    "residential": {
+      "title": "Privat renhold",
+      "text": "Standard renholdstjenester skreddersydd for moderne hjem."
+    },
+    "commercial": {
+      "title": "Kontorrenhold",
+      "text": "Profesjonelle hygieneløsninger for bedrifter og studioer."
+    },
+    "deep": {
+      "title": "Hovedrengjøring",
+      "text": "En grundig dypvask for en komplett nullstilling av ditt miljø."
+    }
+  },
+  "benefits": {
+    "vetted": {
+      "title": "Kvalifisert personell",
+      "text": "Grundige bakgrunnsjekker og profesjonell opplæring for alle ansatte."
+    },
+    "eco": {
+      "title": "Miljøvennlig",
+      "text": "Trygge, biologisk nedbrytbare formler for barn, kjæledyr og alle overflater."
+    },
+    "satisfaction": {
+      "title": "Garantert resultat",
+      "text": "En plettfri finish eller et kostnadsfritt nytt besøk innen 24 timer."
+    },
+    "pricing": {
+      "title": "Fastpris",
+      "text": "Transparent prising uten skjulte gebyrer."
+    }
+  },
+  "faq": {
+    "title": "Ofte stilte spørsmål",
+    "subtitle": "Detaljer om våre tjenester og vilkår.",
+    "items": [
+      {
+        "q": "Hvilke rengjøringsmidler bruker dere?",
+        "a": "Vi bruker miljøvennlige, plantebaserte formler som er biologisk nedbrytbare og trygge for overflater, barn og kjæledyr."
+      },
+      {
+        "q": "Må jeg være til stede under rengjøringen?",
+        "a": "Nei, de fleste av våre kunder gir oss nøkkel. Våre ansatte er trent til å jobbe selvstendig og respektere ditt privatliv."
+      },
+      {
+        "q": "Hvordan bestiller jeg en vask?",
+        "a": "Du kan bestille direkte via vårt kontaktskjema eller per telefon. Vi bekrefter din avtale og gir et pristilbud innen 24 timer."
+      },
+      {
+        "q": "Er rengjøringsmidlene deres trygge for kjæledyr?",
+        "a": "Ja, vi bruker utelukkende 100 % organiske, giftfrie midler som er helt trygge for kjæledyr, barn og allergikere."
+      },
+      {
+        "q": "Hvilke områder i Oslo betjener dere?",
+        "a": "Vi leverer premium renholdstjenester i alle bydeler i Oslo og de nærliggende områdene i Viken."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Kontakt oss",
+    "form_title": "Klar for en ny start?",
+    "address": "Oslo, Norge",
+    "phone": "+47 22 33 44 55",
+    "email": "post{'@'}ankarenhold.no",
+    "social_title": "Følg oss"
+  },
+  "footer": {
+    "privacy": "Personvern",
+    "terms": "Vilkår for bruk",
+    "sustainability": "Bærekraftsrapport",
+    "developed_by": "Utviklet av Mariusv.dev",
+    "company": "SELSKAP",
+    "details": "DETALJER",
+    "stay_in_touch": "HOLD KONTAKTEN",
+    "oslo": "OSLO",
+    "rights": "© 2026 ANKARENHOLD AS. ALLE RETTIGHETER FORBEHOLDT."
+  },
+  "testimonials": {
+    "title": "Kundeanmeldelser",
+    "subtitle": "Betrodd av hjem- og bedriftseiere i Oslo.",
+    "items": [
+      {
+        "quote": "Anka Renhold AS stilte opp på kort varsel. Ekstremt imponert over hvor nøye de var. Dette er to som virkelig kan jobben sin! Kommunikasjonen gikk plettfritt fra start til slutt.",
+        "author": "Karoline H.",
+        "role": "Privatkunde"
+      },
+      {
+        "quote": "Dette er andre gang jeg benytter Anka Renhold. Fantastisk kvalitet på arbeidet og de er utrolig hyggelige å ha med å gjøre! Anbefales til alle som trenger profesjonelt renhold.",
+        "author": "Magnus Solberg",
+        "role": "Konsulent"
+      },
+      {
+        "quote": "Jeg har aldri hatt så rene vinduer før! Kan varmt anbefale Anka Renhold for deres raske kommunikasjon og superkvalitet på vindusvasken. Ryddige, hyggelige og pålitelige.",
+        "author": "Siri Jensen",
+        "role": "Huseier"
+      },
+      {
+        "quote": "De leverte høy kvalitet på min flyttevask. De tok spesifikke detaljer på strak arm og gjennomførte arbeidet effektivt og med stor nøyaktighet. Jeg ble veldig fornøyd med resultatet!",
+        "author": "Anders Berg",
+        "role": "Daglig leder"
+      },
+      {
+        "quote": "Veldig fornøyd! Hele prosessen var ryddig og de er superhyggelige. Effektiv gjennomføring uten skjulte kostnader som parkering eller bom. Kun ærlig timepris fra de kom inn døra!",
+        "author": "Emilie Foss",
+        "role": "Arkitekt"
+      },
+      {
+        "quote": "God kommunikasjon i forkant og underveis. De gjør et veldig nøye arbeid og er både effektive og fleksible. Hele opplevelsen var veldig ryddig, og vi er utrolig fornøyde.",
+        "author": "Thomas Dahl",
+        "role": "Studioeier"
+      }
+    ]
+  }
+}
