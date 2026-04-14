@@ -1,5 +1,5 @@
 <script setup>
-import { Leaf as LucideLeaf, Shield as LucideShield, Target as LucideFocus } from 'lucide-vue-next'
+import { Leaf as LucideLeaf, Clock as LucideClock, Target as LucideFocus } from 'lucide-vue-next'
 const { t } = useI18n()
 const pillars = computed(() => [
   {
@@ -10,7 +10,7 @@ const pillars = computed(() => [
   },
   {
     key: 'ethical',
-    icon: LucideShield,
+    icon: LucideClock,
     title: t('pillars.ethical.title'),
     text: t('pillars.ethical.text')
   },
