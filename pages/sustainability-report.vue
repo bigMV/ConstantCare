@@ -1,56 +1,70 @@
 <script setup>
+import { Leaf as LucideLeaf, Droplets as LucideDroplets, Zap as LucideZap, ShieldCheck as LucideShieldCheck } from 'lucide-vue-next'
 const { t } = useI18n()
 
-// Simplified SEO Metadata
 useSeoMeta({
   title: 'Sustainability Report | Ankarenhold',
   description: 'Our commitment to environmentally friendly cleaning practices.',
-  ogTitle: 'Sustainability Report | Ankarenhold',
-  ogDescription: 'Safe and sustainable cleaning for our planet.',
 })
 </script>
 
 <template>
-  <div class="pt-40 pb-32 px-6 md:px-12 max-w-4xl mx-auto">
+  <div class="pt-40 pb-32 container-content max-w-4xl mx-auto">
     <header class="mb-20">
-      <span class="label-md text-primary mb-4 block uppercase tracking-widest">Environment</span>
-      <h1 class="text-4xl md:text-6xl font-bold mb-8">Sustainability</h1>
-      <p class="text-xl text-on-surface/60 leading-relaxed">
+      <div class="eyebrow mb-6">
+        <div class="eyebrow-line"></div>
+        <span class="eyebrow-label">Environment</span>
+      </div>
+      <HeadingRenderPass as="h1"  text="Sustainability" />
+      <h2 class="text-lg text-on-surface/60">
         We ensure our cleaning services are safe for the planet. We use eco-friendly products and sustainable business practices.
-      </p>
+      </h2>
     </header>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20 text-center">
-      <div class="bg-surface-low p-8 rounded-2xl">
-        <span class="text-4xl font-bold block mb-2">100%</span>
-        <span class="label-md opacity-40">Plant-Based</span>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-24 overflow-hidden">
+      <div class="bg-surface-low p-6 md:p-8 rounded-[2rem] flex flex-col items-center text-center group hover:bg-surface-mid transition-colors">
+        <LucideLeaf class="text-primary opacity-20 group-hover:opacity-100 transition-all mb-4" :size="32" />
+        <span class="text-2xl font-bold block mb-2 break-words">100%</span>
+        <span class="eyebrow-label opacity-40">Plant-Based</span>
       </div>
-      <div class="bg-surface-low p-8 rounded-2xl">
-        <span class="text-4xl font-bold block mb-2">0%</span>
-        <span class="label-md opacity-40">Microplastics</span>
+      <div class="bg-surface-low p-6 md:p-8 rounded-[2rem] flex flex-col items-center text-center group hover:bg-surface-mid transition-colors">
+        <LucideDroplets class="text-primary opacity-20 group-hover:opacity-100 transition-all mb-4" :size="32" />
+        <span class="text-2xl font-bold block mb-2 break-words">0%</span>
+        <span class="eyebrow-label opacity-40">Microplastics</span>
       </div>
-      <div class="bg-surface-low p-8 rounded-2xl">
-        <span class="text-4xl font-bold block mb-2">Electric</span>
-        <span class="label-md opacity-40">Logistics</span>
+      <div class="bg-surface-low p-6 md:p-8 rounded-[2rem] flex flex-col items-center text-center group hover:bg-surface-mid transition-colors">
+        <LucideZap class="text-primary opacity-20 group-hover:opacity-100 transition-all mb-4" :size="32" />
+        <span class="text-2xl font-bold block mb-2 break-words">Electric</span>
+        <span class="eyebrow-label opacity-40">Logistics</span>
       </div>
     </div>
 
-    <div class="prose prose-xl prose-stone max-w-none prose-headings:font-bold">
-      <section class="mb-16">
-        <h2 class="text-2xl mb-6">Eco-Friendly Products</h2>
-        <p class="mb-4">
-          All our cleaning agents are non-toxic and biodegradable. We use refillable containers to minimize plastic waste across all our operations.
-        </p>
+    <div class="flex flex-col gap-16">
+      <section class="group">
+        <div class="flex items-center gap-4 mb-6">
+          <LucideLeaf class="text-primary opacity-40 group-hover:opacity-100 transition-opacity" :size="24" />
+          <h3 class="font-serif">Eco-Friendly Products</h3>
+        </div>  
+        <div class="pl-10 border-l border-on-surface/5 text-on-surface/80">
+          <p>
+            All our cleaning agents are non-toxic and biodegradable. We use refillable containers to minimize plastic waste across all our operations.
+          </p>
+        </div>
       </section>
 
-      <section class="mb-16">
-        <h2 class="text-2xl mb-6">Fair Labor Standards</h2>
-        <p class="mb-4">
-          Sustainability also means taking care of our team. All our staff receive fair wages and full benefits, ensuring a positive impact on the community.
-        </p>
+      <section class="group">
+        <div class="flex items-center gap-4 mb-6">
+          <LucideShieldCheck class="text-primary opacity-40 group-hover:opacity-100 transition-opacity" :size="24" />
+          <h3 class="font-serif">Fair Labor Standards</h3>
+        </div>
+        <div class="pl-10 border-l border-on-surface/5 text-on-surface/80">
+          <p>
+            Sustainability also means taking care of our team. All our staff receive fair wages and full benefits, ensuring a positive impact on the community.
+          </p>
+        </div>
       </section>
       
-      <NuxtLink to="/" class="btn btn-primary mt-12">
+      <NuxtLink to="/" class="btn btn-primary !self-start mt-12">
         Return to Home
       </NuxtLink>
     </div>

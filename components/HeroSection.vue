@@ -1,5 +1,5 @@
 <script setup>
-import { ArrowRight as LucideArrowRight } from 'lucide-vue-next'
+import { ArrowRight as LucideArrowRight, ChevronDown as LucideChevronDown } from 'lucide-vue-next'
 const { t } = useI18n()
 </script>
 
@@ -22,22 +22,20 @@ const { t } = useI18n()
     <div class="container-content relative z-20 pointer-events-none text-left">
       <div
         class="max-w-[800px] xl:max-w-[40vw] pointer-events-auto text-left glass p-12 md:p-16 xl:p-[4vw] rounded-[4rem] border-white/20 shadow-2xl backdrop-blur-3xl animate-in-simple">
-        <div class="flex items-center gap-4 mb-8 xl:mb-[2vw] opacity-0 animate-in-simple delay-100 text-left">
-          <div class="w-12 h-[1px] bg-primary opacity-50 shadow-[0_0_10px_rgba(76,100,85,0.4)]"></div>
-          <span
-            class="label-md xl:text-[1vw] text-primary tracking-[0.3em]  uppercase group-hover:tracking-[0.4em] transition-all duration-500">
-            {{ $t('hero.eyebrow') }}
-          </span>
-        </div>
+      
 
         <div class="mb-10 xl:mb-[3vw] relative shrink-0">
-          <h1
-            class="opacity-0 animate-in-simple delay-300 text-shadow-lg text-on-surface text-left !leading-[1.1] [hyphens:auto] fluid-h1">
+          <HeadingRenderPass 
+            as="h1" 
+            uid="hero-title"
+            class="text-shadow-lg text-on-surface text-left !leading-[1.1] text-4xl break-words [hyphens:auto] [word-break:break-word]"
+            :delay="0.3"
+          >
             <span class="block font-serif italic pr-4">{{ $t('hero.title_part1') }}</span>
             <span class="block font-serif font-bold">{{ $t('hero.title_part2') }}</span>
-          </h1>
+          </HeadingRenderPass>
         </div>
-        <p class="max-w-[60ch] fluid-p opacity-0 animate-in-simple delay-500 text-on-surface/80 text-left">
+        <p class="max-w-[60ch] text-base opacity-0 animate-in-simple delay-500 text-on-surface/80 text-left">
           {{ $t('hero.description') }}
         </p>
 
@@ -47,23 +45,25 @@ const { t } = useI18n()
             <LucideArrowRight :size="20" class="ml-3 group-hover:translate-x-2 transition-transform duration-300" />
           </NuxtLink>
           <NuxtLink to="/#services"
-            class="label-md border-b border-primary/20 hover:border-primary pb-1 group cursor-pointer transition-all">
+            class="eyebrow-label border-b border-primary/20 hover:border-primary pb-1 group cursor-pointer transition-all">
             {{ $t('nav.services') }}
           </NuxtLink>
         </div>
       </div>
     </div>
 
-    <!-- Decorative Label (Specimen look) -->
-    <div class="absolute bottom-12 right-12 z-20 flex flex-col items-end opacity-40 mix-blend-difference flex">
-      <span class="label-md text-white">OSLO, NORWAY</span>
+    <!-- Bottom Bar -->
+    <div class="absolute bottom-8 left-12 right-12 z-20 flex items-center justify-between opacity-60 mix-blend-difference pointer-events-none">
+      <!-- Scroll Indicator -->
+      <div class="flex items-center gap-2 pointer-events-auto">
+        <span class="eyebrow-label text-white tracking-widest">SCROLL</span>
+        <LucideChevronDown :size="20" class="text-white animate-bounce-slow" />
+      </div>
 
-    </div>
-
-    <!-- Scroll Indicator -->
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-4 animate-bounce">
-      <span class="label-md rotate-90 !origin-center mb-12 translate-y-4 opacity-60">SCROLL</span>
-      <div class="w-[1.5px] h-20 bg-gradient-to-b from-primary to-transparent shadow-[0_0_15px_#4C6455]"></div>
+      <!-- Location Label -->
+      <div class="flex items-center">
+        <span class="eyebrow-label text-white tracking-widest uppercase">Oslo, Norway</span>
+      </div>
     </div>
   </section>
 </template>
@@ -111,6 +111,22 @@ const { t } = useI18n()
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2s infinite;
+}
+
+@keyframes bounce-slow {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-4px);
   }
 }
 </style>

@@ -21,8 +21,8 @@
       "text": "Vi bruker miljøvennlige, plantebaserte løsninger som er trygge for alle."
     },
     "ethical": {
-      "title": "Etisk",
-      "text": "Vårt team består av fast ansatte med gode betingelser, som sikrer pålitelig service."
+      "title": "Profesjonelle",
+      "text": "Vårt team består av fast ansatte fagfolk. Dette sikrer unik pålitelighet, kontinuitet og trygghet for deg som kunde."
     },
     "detail": {
       "title": "Kvalitet",
@@ -65,6 +65,8 @@
   "faq": {
     "title": "Ofte stilte spørsmål",
     "subtitle": "Detaljer om våre tjenester og vilkår.",
+    "not_found_title": "Finner du ikke det du leter etter?",
+    "ask_question": "Still et spørsmål",
     "items": [
       {
         "q": "Hvilke rengjøringsmidler bruker dere?",
@@ -97,6 +99,7 @@
     "social_title": "Følg oss"
   },
   "footer": {
+    "description": "Profesjonelle renholdstjenester i Oslo. Fokusert på kvalitet, pålitelighet og sans for detaljer.",
     "privacy": "Personvern",
     "terms": "Vilkår for bruk",
     "sustainability": "Bærekraftsrapport",

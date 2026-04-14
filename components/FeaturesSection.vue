@@ -1,5 +1,5 @@
 <script setup>
-import { Leaf as LucideLeaf, Heart as LucideHeart, Target as LucideFocus } from 'lucide-vue-next'
+import { Leaf as LucideLeaf, Shield as LucideShield, Target as LucideFocus } from 'lucide-vue-next'
 const { t } = useI18n()
 const pillars = computed(() => [
   {
@@ -10,7 +10,7 @@ const pillars = computed(() => [
   },
   {
     key: 'ethical',
-    icon: LucideHeart,
+    icon: LucideShield,
     title: t('pillars.ethical.title'),
     text: t('pillars.ethical.text')
   },
@@ -38,10 +38,13 @@ const pillars = computed(() => [
           </div>
           
           <div>
-            <h2 class="mb-4 fluid-h3 tracking-tight">
-              {{ pillar.title }}
-            </h2>
-            <p class="text-on-surface/60 leading-relaxed max-w-[35ch] fluid-p text-sm md:text-base">
+            <HeadingRenderPass
+              as="h2"
+              class="mb-4 text-2xl tracking-tight"
+              :text="pillar.title"
+              :uid="`pillar-${pillar.key}`"
+            />
+            <p class="text-on-surface/60 leading-relaxed max-w-[35ch] text-base text-sm md:text-base">
               {{ pillar.text }}
             </p>
           </div>

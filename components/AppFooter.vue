@@ -8,21 +8,21 @@
         <!-- Brand -->
         <div class="flex flex-col gap-8">
           <div class="flex items-center gap-3">
-            <div class="w-[clamp(2.5rem,3vw,5rem)] h-[clamp(2.5rem,3vw,5rem)] rounded-full overflow-hidden bg-primary flex items-center justify-center p-2 transition-all duration-700 ">
+            <div class="brand-logo brand-logo--large">
               <NuxtImg src="/logo.png" alt="Logo" class="w-full h-full object-contain brightness-0 invert" />
             </div>
-            <span class="font-serif italic fluid-h3 lg:!text-[clamp(2rem,3vw,4rem)] font-bold tracking-wide text-on-surface">
+            <span class="brand-text text-on-surface">
               Ankarenhold
             </span>
           </div>
-          <p class="fluid-p text-sm md:text-base opacity-50 max-w-[30ch] leading-relaxed">
-            Professional cleaning services in Oslo. Focused on quality, reliability, and attention to detail.
+          <p class="text-base text-sm md:text-base opacity-50 max-w-[30ch] leading-relaxed">
+            {{ $t('footer.description') }}
           </p>
         </div>
 
         <!-- Links -->
         <div class="flex flex-col gap-6">
-          <span class="label-md opacity-30 tracking-[0.2em]">{{ $t('footer.company') }}</span>
+          <span class="eyebrow-label !opacity-30">{{ $t('footer.company') }}</span>
           <NuxtLink to="/#services" class="text-sm hover:text-primary transition-all hover:translate-x-1">{{
             $t('nav.services') }}</NuxtLink>
           <NuxtLink to="/#philosophy" class="text-sm hover:text-primary transition-all hover:translate-x-1">{{
@@ -33,7 +33,7 @@
 
         <!-- Compliance / Details -->
         <div class="flex flex-col gap-6">
-          <span class="label-md opacity-30 tracking-[0.2em]">{{ $t('footer.details') }}</span>
+          <span class="eyebrow-label !opacity-30">{{ $t('footer.details') }}</span>
           <NuxtLink to="/privacy-policy" class="text-sm hover:text-primary transition-all hover:translate-x-1">{{
             $t('footer.privacy') }}</NuxtLink>
           <NuxtLink to="/terms-of-service" class="text-sm hover:text-primary transition-all hover:translate-x-1">{{
@@ -44,23 +44,18 @@
       </div>
 
       <!-- Copyright -->
-      <div class="flex flex-col md:flex-row justify-between items-center gap-8 pt-12 border-t border-on-surface/5">
-        <span class="label-md opacity-30 tracking-widest">{{ $t('footer.rights') }}</span>
-        <div class="flex items-center gap-8">
-          <a href="https://mariusv.dev" target="_blank" class="group/dev relative py-2">
-            <span
-              class="label-md opacity-30 group-hover/dev:opacity-100 transition-opacity duration-500 tracking-[0.2em]">
-              {{ $t('footer.developed_by') }}
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 pt-12 border-t border-on-surface/5">
+        <span class="text-[9px] uppercase tracking-[0.3em] opacity-20">{{ $t('footer.rights') }}</span>
+        
+        <div class="flex items-center gap-4">
+          <a href="https://mariusv.dev" target="_blank" class="group/dev flex items-center gap-2">
+            <span class="text-[9px] uppercase tracking-[0.3em] opacity-20 group-hover/dev:opacity-60 transition-opacity duration-700">
+               {{ $t('footer.developed_by') }}
             </span>
-            <div
-              class="absolute bottom-0 left-0 w-0 h-[1px] bg-primary group-hover/dev:w-full transition-all duration-700 ease-out">
-            </div>
-            <div
-              class="absolute -top-1 -right-1 w-1.5 h-1.5 bg-primary rounded-full opacity-0 group-hover/dev:opacity-100 transition-all duration-500 delay-300 shadow-[0_0_10px_#4C6455] scale-0 group-hover/dev:scale-100">
-            </div>
+            <div class="w-1 h-1 rounded-full bg-primary opacity-0 group-hover/dev:opacity-40 transition-all duration-700"></div>
           </a>
-          <div class="w-px h-12 bg-on-surface/10"></div>
-          <span class="label-md opacity-30 tracking-[0.3em]"> {{ $t('footer.oslo') }}</span>
+          <span class="text-[9px] opacity-10 select-none">/</span>
+          <span class="text-[9px] uppercase tracking-[0.3em] opacity-20"> {{ $t('footer.oslo') }}</span>
         </div>
       </div>
     </div>

@@ -38,12 +38,11 @@ const forceDarkText = computed(() => !isHomePage.value || isMenuOpen.value)
     <nav class="container-content flex items-center justify-between">
       <!-- Logo -->
       <NuxtLink to="/" class="flex items-center gap-3 group">
-        <div
-          class="w-[clamp(2rem,2.5vw,4rem)] h-[clamp(2rem,2.5vw,4rem)] rounded-full overflow-hidden bg-primary shadow-inner group-hover:scale-110 transition-transform duration-500">
+        <div class="brand-logo">
           <NuxtImg src="/logo.png" alt="Logo" class="w-full h-full object-contain brightness-0 invert" />
         </div>
         <span
-          class="font-serif italic fluid-h3 lg:!text-[clamp(1.5rem,2vw,3rem)] font-bold tracking-wide transition-colors duration-500"
+          class="brand-text transition-colors duration-500"
           :class="isScrolled || forceDarkText ? 'text-on-surface hover:text-primary' : 'text-white'"
         >  Ankarenhold
         </span>
@@ -53,11 +52,11 @@ const forceDarkText = computed(() => !isHomePage.value || isMenuOpen.value)
       <div class="hidden lg:flex items-center gap-8 xl:gap-[3vw]">
         <div class="flex items-center gap-8 transition-all duration-200"
           :class="isScrolled || forceDarkText ? 'text-on-surface' : 'text-white'">
-          <NuxtLink to="/#services" class="label-md hover:text-primary transition-all hover:translate-y-[-1px]">{{
+          <NuxtLink to="/#services" class="eyebrow-label hover:text-primary transition-all hover:translate-y-[-1px]">{{
             $t('nav.services') }}</NuxtLink>
-          <NuxtLink to="/#philosophy" class="label-md hover:text-primary transition-all hover:translate-y-[-1px]">{{
+          <NuxtLink to="/#philosophy" class="eyebrow-label hover:text-primary transition-all hover:translate-y-[-1px]">{{
             $t('nav.philosophy') }}</NuxtLink>
-          <NuxtLink to="/#faq" class="label-md hover:text-primary transition-all hover:translate-y-[-1px]">{{
+          <NuxtLink to="/#faq" class="eyebrow-label hover:text-primary transition-all hover:translate-y-[-1px]">{{
             $t('nav.faq') }}</NuxtLink>
         </div>
 
@@ -93,10 +92,10 @@ const forceDarkText = computed(() => !isHomePage.value || isMenuOpen.value)
 
     <!-- Mobile Menu Overlay -->
     <div 
-      class="fixed top-0 left-0 w-full h-screen z-[-1] bg-surface flex flex-col justify-center px-6 md:px-12 transition-all duration-700 ease-in-out lg:hidden"
+      class="fixed top-0 left-0 w-full h-[100dvh] z-[-1] bg-surface flex flex-col px-6 md:px-12 transition-all duration-700 ease-in-out lg:hidden"
       :class="isMenuOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-8 pointer-events-none'"
     >
-      <div class="flex flex-col gap-10 text-5xl md:text-6xl font-serif text-left opacity-0 transition-opacity duration-700 delay-300" :class="isMenuOpen ? '!opacity-100' : ''" @click="toggleMenu">
+      <div class="flex-1 flex flex-col justify-center gap-8 md:gap-10 text-5xl md:text-6xl font-serif text-left opacity-0 transition-opacity duration-700 delay-300" :class="isMenuOpen ? '!opacity-100' : ''" @click="toggleMenu">
         <NuxtLink to="/#services" class="hover:text-primary hover:underline hover:underline-offset-8 decoration-primary/50 transition-all cursor-pointer">{{ $t('nav.services') }}</NuxtLink>
         <NuxtLink to="/#philosophy" class="hover:text-primary hover:underline hover:underline-offset-8 decoration-primary/50 transition-all cursor-pointer">{{ $t('nav.philosophy') }}</NuxtLink>
         <NuxtLink to="/#faq" class="hover:text-primary hover:underline hover:underline-offset-8 decoration-primary/50 transition-all cursor-pointer">{{ $t('nav.faq') }}</NuxtLink>
@@ -104,7 +103,7 @@ const forceDarkText = computed(() => !isHomePage.value || isMenuOpen.value)
       </div>
 
       <!-- Language Switcher Mobile -->
-      <div class="absolute bottom-12 left-6 md:left-12 flex items-center gap-4 opacity-0 transition-opacity duration-700 delay-500" :class="isMenuOpen ? '!opacity-100' : ''">
+      <div class="pb-20 flex items-center gap-4 opacity-0 transition-opacity duration-700 delay-500" :class="isMenuOpen ? '!opacity-100' : ''">
         <button v-for="loc in locales" :key="loc.code" @click="handleLocaleChange(loc.code); toggleMenu()"
           class="w-14 h-14 rounded-full flex items-center justify-center transition-all duration-500 relative bg-surface-highest text-on-surface cursor-pointer"
           :class="locale === loc.code ? 'border border-primary text-primary font-bold' : 'opacity-60 border border-transparent'"

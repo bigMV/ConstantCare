@@ -38,13 +38,17 @@ const carouselSettings = {
   <section id="reviews" class="py-32 bg-surface-low overflow-hidden">
     <div class="container-content">
       <div class="mb-10 md:mb-20">
-        <div class="flex items-center gap-4 mb-6">
-          <div class="w-12 h-[1px] bg-primary opacity-50 shadow-[0_0_10px_rgba(76,100,85,0.4)]"></div>
-          <span class="label-md text-primary tracking-[0.3em] font-black uppercase">
+        <div class="eyebrow">
+          <div class="eyebrow-line"></div>
+          <span class="eyebrow-label">
             {{ $t('nav.testimonials') }}
           </span>
         </div>
-        <h2 v-reveal class="max-w-[40ch] fluid-h2 font-serif tracking-tight pr-8 mb-0">{{ $t('testimonials.subtitle') }}</h2>
+        <HeadingRenderPass 
+          as="h2" 
+          class="max-w-[40ch] text-3xl font-serif tracking-tight pr-8 mb-0"
+          :text="$t('testimonials.subtitle')"
+        />
       </div>
 
       <!-- Testimonials Carousel -->
@@ -60,13 +64,13 @@ const carouselSettings = {
                   </div>
 
                   <div class="relative z-10 pt-12 flex flex-col h-full justify-between gap-8">
-                    <p class="fluid-p md:text-lg leading-relaxed italic text-on-surface font-medium">
+                    <p class="text-base md:text-lg leading-relaxed italic text-on-surface font-medium">
                       "{{ item.quote }}"
                     </p>
 
                     <div class="mt-8 pt-8 border-t border-on-surface/5 flex flex-col gap-1">
                       <span class="font-bold text-on-surface tracking-wide">{{ item.author }}</span>
-                      <span class="label-md opacity-40 text-[11px] uppercase tracking-[0.2em]">{{ item.role }}</span>
+                      <span class="eyebrow-label opacity-40 text-[11px] uppercase tracking-[0.2em]">{{ item.role }}</span>
                     </div>
                   </div>
                 </div>
