@@ -4,10 +4,10 @@ const { t } = useI18n()
 
 <template>
   <section class="py-32 bg-[#f4f3f0]" id="services">
-    <div class="max-w-7xl mx-auto px-6 md:px-12">
-      <div class="text-center max-w-2xl mx-auto mb-20">
-        <span class="font-sans text-xs uppercase tracking-widest text-[#455846] mb-4 block">{{ $t('services.eyebrow') }}</span>
-        <h2 class="font-sans text-3xl md:text-4xl font-light tracking-tight text-[#1b1c1a]">{{ $t('services.title') }}</h2>
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="text-left max-w-2xl mb-20">
+        <span class="eyebrow mb-4 block">{{ $t('services.eyebrow') }}</span>
+        <h2 class="heading-lg text-[#1b1c1a]">{{ $t('services.title') }}</h2>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- 30 Min -->
@@ -16,12 +16,12 @@ const { t } = useI18n()
             <span class="material-symbols-outlined text-6xl text-[#455846]">schedule</span>
           </div>
           <div class="relative z-10">
-            <h3 class="font-sans text-2xl font-medium text-[#1b1c1a] mb-2">{{ $t('services.m30.title') }}</h3>
-            <div class="font-sans text-sm tracking-wider text-[#455846] mb-6">{{ $t('services.m30.price') }}</div>
-            <p class="font-sans text-sm text-[#444841] leading-relaxed mb-8">
+            <h3 class="heading-md text-[#1b1c1a] mb-2">{{ $t('services.m30.title') }}</h3>
+            <div class="heading-md !text-sm text-[#455846] mb-6">{{ $t('services.m30.price') }}</div>
+            <p class="body-md text-[#444841] mb-8">
               {{ $t('services.m30.description_short') }}
             </p>
-            <div class="inline-flex items-center text-[#455846] font-sans text-xs uppercase tracking-widest group-hover:text-[#5d705d] transition-colors">
+            <div class="button-label inline-flex items-center text-[#455846] group-hover:text-[#5d705d] transition-colors">
               {{ $t('services.select') }} <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
             </div>
           </div>
@@ -32,12 +32,12 @@ const { t } = useI18n()
             <span class="material-symbols-outlined text-6xl text-[#455846]">schedule</span>
           </div>
           <div class="relative z-10">
-            <h3 class="font-sans text-2xl font-medium text-[#1b1c1a] mb-2">{{ $t('services.m40.title') }}</h3>
-            <div class="font-sans text-sm tracking-wider text-[#455846] mb-6">{{ $t('services.m40.price') }}</div>
-            <p class="font-sans text-sm text-[#444841] leading-relaxed mb-8">
+            <h3 class="heading-md text-[#1b1c1a] mb-2">{{ $t('services.m40.title') }}</h3>
+            <div class="heading-md !text-sm text-[#455846] mb-6">{{ $t('services.m40.price') }}</div>
+            <p class="body-md text-[#444841] mb-8">
               {{ $t('services.m40.description_short') }}
             </p>
-            <div class="inline-flex items-center text-[#455846] font-sans text-xs uppercase tracking-widest group-hover:text-[#5d705d] transition-colors">
+            <div class="button-label inline-flex items-center text-[#455846] group-hover:text-[#5d705d] transition-colors">
               {{ $t('services.select') }} <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
             </div>
           </div>
@@ -48,12 +48,12 @@ const { t } = useI18n()
             <span class="material-symbols-outlined text-6xl text-[#455846]">schedule</span>
           </div>
           <div class="relative z-10">
-            <h3 class="font-sans text-2xl font-medium text-[#1b1c1a] mb-2">{{ $t('services.m50.title') }}</h3>
-            <div class="font-sans text-sm tracking-wider text-[#455846] mb-6">{{ $t('services.m50.price') }}</div>
-            <p class="font-sans text-sm text-[#444841] leading-relaxed mb-8">
+            <h3 class="heading-md text-[#1b1c1a] mb-2">{{ $t('services.m50.title') }}</h3>
+            <div class="heading-md !text-sm text-[#455846] mb-6">{{ $t('services.m50.price') }}</div>
+            <p class="body-md text-[#444841] mb-8">
               {{ $t('services.m50.description_short') }}
             </p>
-            <div class="inline-flex items-center text-[#455846] font-sans text-xs uppercase tracking-widest group-hover:text-[#5d705d] transition-colors">
+            <div class="button-label inline-flex items-center text-[#455846] group-hover:text-[#5d705d] transition-colors">
               {{ $t('services.select') }} <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
             </div>
           </div>

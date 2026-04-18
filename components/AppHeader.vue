@@ -53,20 +53,20 @@ const translatedNavigation = computed(() => [
         isNavOpen ? 'bg-transparent shadow-none' : ''
       ]"
     >
-      <div class="max-w-[1920px] mx-auto px-6 md:px-12 flex flex-row items-center justify-between">
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-row items-center justify-between">
         <NuxtLink to="/" class="relative flex flex-row items-center justify-center group" @click="closeNav">
           <NuxtImg src="/LogoConstantCare.png" class="h-8 md:h-10 transition-transform duration-500 group-hover:scale-105" />
         </NuxtLink>
-
+ 
         <!-- Desktop Navigation -->
-        <nav class="hidden md:flex items-center gap-10">
+        <nav class="hidden lg:flex items-center gap-10">
           <div v-for="(item, index) in translatedNavigation" :key="item.href"
             v-motion
             :initial="{ opacity: 0, y: -20 }"
             :enter="{ opacity: 1, y: 0, transition: { delay: index * 100 } }"
           >
             <NuxtLink :to="item.href"
-              class="relative text-sm font-sans uppercase tracking-[0.2em] text-[#444841] hover:text-[#455846] transition duration-500 block group cursor-pointer"
+              class="relative button-label text-[#444841] hover:text-[#455846] transition duration-500 block group cursor-pointer"
               @click="closeNav">
               {{ item.name }}
               <span class="absolute left-0 bottom-[-4px] w-full h-[1px] bg-[#455846] transition-transform duration-500 origin-left"
@@ -74,22 +74,22 @@ const translatedNavigation = computed(() => [
             </NuxtLink>
           </div>
         </nav>
-
+ 
         <div class="flex items-center gap-6">
-          <div class="hidden md:block">
+          <div class="hidden lg:block">
             <LangSwitcher class="text-[#444841]" />
           </div>
           
           <!-- Book Button (Desktop only) -->
           <NuxtLink 
             to="#contact" 
-            class="hidden md:inline-flex items-center justify-center bg-[#455846] text-white font-sans text-xs uppercase tracking-widest px-6 py-3 rounded-md hover:bg-[#5d705d] transition-colors duration-300"
+            class="hidden lg:inline-flex items-center justify-center bg-[#455846] text-white button-label px-6 py-3 rounded-md hover:bg-[#5d705d] transition-colors duration-300"
           >
             {{ $t('hero.cta') }}
           </NuxtLink>
-
+ 
           <!-- Mobile Toggle + Lang Switcher -->
-          <div class="md:hidden flex items-center gap-4">
+          <div class="lg:hidden flex items-center gap-4">
             <LangSwitcher class="text-[#444841]" />
             <button @click="toggleNav" class="flex flex-col justify-center items-center w-10 h-10 gap-2 z-[120] relative">
               <div class="w-6 h-[2px] transition-all duration-300" :class="[ isNavOpen ? 'rotate-45 translate-y-[5px] bg-black' : 'bg-[#455846]' ]"></div>
@@ -117,7 +117,7 @@ const translatedNavigation = computed(() => [
             :enter="{ opacity: 1, x: 0, transition: { delay: 100 + (index * 80) } }"
           >
             <NuxtLink :to="item.href"
-              class="text-4xl font-light hover:text-[#455846] transition-colors uppercase tracking-tight text-left py-1 block cursor-pointer"
+              class="display-lg hover:text-[#455846] transition-colors uppercase text-left py-1 block cursor-pointer"
               :class="[ activeHash === item.href ? 'text-[#455846]' : 'text-[#1b1c1a]' ]"
               @click="closeNav"
             >
@@ -133,7 +133,7 @@ const translatedNavigation = computed(() => [
           >
             <NuxtLink 
               to="#contact" 
-              class="inline-flex items-center justify-center bg-[#455846] text-white font-sans text-sm uppercase tracking-[0.2em] px-10 py-5 rounded-md shadow-xl w-full"
+              class="inline-flex items-center justify-center bg-[#455846] text-white button-label px-10 py-5 rounded-md shadow-xl w-full"
               @click="closeNav"
             >
               {{ $t('hero.cta') }}

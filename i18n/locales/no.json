@@ -8,13 +8,17 @@
   },
   "hero": {
     "eyebrow": "Helhetlig Behandling",
+    "subtitle": "Helhetlig Behandling",
     "title": "Helhetlig behandling i hjertet av Oslo.",
     "description": "En fredelig flukt fra byen. Jordet i naturen, ledet av berøring. Gjenopprett kontakten med kroppens naturlige rytme.",
-    "cta": "Se Behandlinger"
+    "cta": "Se Behandlinger",
+    "secondary": "Forespørsel"
   },
   "intro": {
     "eyebrow": "Filosofi",
+    "subtitle": "Filosofi",
     "title": "Forankret i landskapet, med fokus på individet.",
+    "description": "Hos ConstantCare mener vi at ekte restitusjon krever mer enn bare fysisk manipulasjon. Det krever et bevisst skritt bort fra støyen, og å gå inn i et rom designet for å berolige sinnet og jorde sjelen.",
     "text1": "Hos ConstantCare mener vi at ekte restitusjon krever mer enn bare fysisk manipulasjon. Det krever et bevisst skritt bort fra støyen, og å gå inn i et rom designet for å berolige sinnet og jorde sjelen.",
     "text2": "Vår tilnærming integrerer tradisjonelle skandinaviske terapeutiske teknikker med en helhetlig forståelse av nervesystemet. Hver økt er kuratert etter din nåværende tilstand, ved bruk av organiske oljer laget av lokal flora."
   },

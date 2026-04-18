@@ -8,13 +8,17 @@
   },
   "hero": {
     "eyebrow": "Holistic Healing",
+    "subtitle": "Holistic Healing",
     "title": "Holistic Healing in the Heart of Oslo.",
     "description": "A serene escape from the city. Grounded in nature, guided by touch. Reconnect with your body's natural rhythm.",
-    "cta": "Discover Treatments"
+    "cta": "Discover Treatments",
+    "secondary": "Inquiry"
   },
   "intro": {
     "eyebrow": "Philosophy",
+    "subtitle": "Philosophy",
     "title": "Rooted in the landscape, focused on the individual.",
+    "description": "At ConstantCare, we believe that true restoration requires more than just physical manipulation. It requires a deliberate step away from the noise, entering a space designed to quiet the mind and ground the spirit.",
     "text1": "At ConstantCare, we believe that true restoration requires more than just physical manipulation. It requires a deliberate step away from the noise, entering a space designed to quiet the mind and ground the spirit.",
     "text2": "Our approach integrates traditional Scandinavian therapeutic techniques with a holistic understanding of the nervous system. Every session is curated to your current state of being, utilizing organic oils crafted from local flora."
   },
