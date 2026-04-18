@@ -58,6 +58,15 @@
     color: var(--color-primary);
   }
 
+  button, 
+  a, 
+  input[type="submit"], 
+  input[type="button"], 
+  label[for], 
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
   h1,
   h2,
   h3,

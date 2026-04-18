@@ -10,7 +10,8 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxtjs/i18n',
-    '@nuxt/image'
+    '@nuxt/image',
+    '@vueuse/motion/nuxt'
   ],
 
   vite: {
@@ -20,13 +21,13 @@ export default defineNuxtConfig({
   },
 
   image: {
-    format: [ 'avif', 'webp' ],
+    format: ['avif', 'webp'],
   },
 
-  css: [ '~/assets/css/main.css' ],
+  css: ['~/assets/css/main.css'],
 
   i18n: {
-    baseUrl: 'https://ankarenhold.no',
+    baseUrl: 'https://constantcare.no',
     defaultLocale: 'en',
     strategy: 'prefix_except_default',
     langDir: 'locales',
@@ -43,7 +44,7 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/png', href: '/favicon.ico' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap' }
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap' }
       ]
     }
   }

@@ -7,7 +7,7 @@ useSeoMeta({
   ogTitle: t('hero.title') + ' | ' + t('hero.eyebrow'),
   description: t('hero.description'),
   ogDescription: t('hero.description'),
-  ogImage: '/images/hero.png',
+  ogImage: '/images/hero_background.png',
   twitterCard: 'summary_large_image',
 })
 </script>
@@ -15,8 +15,9 @@ useSeoMeta({
 <template>
   <div>
     <HeroSection />
-    <FeaturesSection />
+    <IntroSection />
     <ServicesSection />
+    <FeaturesSection />
     <TestimonialsSection />
     <FaqSection />
     <ContactSection />

@@ -3,63 +3,60 @@
     "services": "Tjenester",
     "philosophy": "Vår tilnærming",
     "testimonials": "Anmeldelser",
-    "reviews": "Anmeldelser",
     "faq": "FAQ",
     "cta": "Kontakt oss"
   },
   "hero": {
-    "eyebrow": "PROFESJONELT RENHOLD I OSLO",
-    "title": "Premium Renholdstjenester",
-    "title_part1": "Premium",
-    "title_part2": "Renholdstjenester",
-    "description": "Pålitelig renhold av høy kvalitet for hjem og kontor. Vi fokuserer på presisjon, kvalitet og din tilfredshet.",
-    "cta": "Bestill nå"
+    "eyebrow": "Helhetlig Behandling",
+    "title": "Helhetlig behandling i hjertet av Oslo.",
+    "description": "En fredelig flukt fra byen. Jordet i naturen, ledet av berøring. Gjenopprett kontakten med kroppens naturlige rytme.",
+    "cta": "Se Behandlinger"
   },
-  "pillars": {
-    "sustainable": {
-      "title": "Bærekraftig",
-      "text": "Vi bruker miljøvennlige, plantebaserte løsninger som er trygge for alle."
-    },
-    "ethical": {
-      "title": "Punktlighet",
-      "text": "Vi respekterer din tid. Vårt profesjonelle team sikrer presis oppmøte og forutsigbare avtaler du kan stole på hver gang."
-    },
-    "detail": {
-      "title": "Kvalitet",
-      "text": "Vi legger stor vekt på detaljer og sørger for at rommet ditt alltid er rent og ryddig."
-    }
+  "intro": {
+    "eyebrow": "Filosofi",
+    "title": "Forankret i landskapet, med fokus på individet.",
+    "text1": "Hos ConstantCare mener vi at ekte restitusjon krever mer enn bare fysisk manipulasjon. Det krever et bevisst skritt bort fra støyen, og å gå inn i et rom designet for å berolige sinnet og jorde sjelen.",
+    "text2": "Vår tilnærming integrerer tradisjonelle skandinaviske terapeutiske teknikker med en helhetlig forståelse av nervesystemet. Hver økt er kuratert etter din nåværende tilstand, ved bruk av organiske oljer laget av lokal flora."
   },
   "services": {
-    "title": "Våre Tjenester",
-    "residential": {
-      "title": "Privat renhold",
-      "text": "Standard renholdstjenester skreddersydd for moderne hjem."
+    "eyebrow": "Tilbud",
+    "title": "Våre Behandlinger",
+    "m30": {
+      "title": "30 min Massasje",
+      "price": "NOK 625",
+      "description_short": "Rask, målrettet lindring for en travel hverdag. Fokus på spesifikke spenningsområder.",
+      "description_long": "Gi en gave med rask, målrettet lindring. Denne 30-minutters massasjen er perfekt for de med en travel hverdag som trenger å smelte bort stress eller fokusere på et spesifikt problemområde, som stiv nakke, anspente skuldre eller spenninger i korsryggen. Det er den ideelle oppkvikkeren for å nullstille kropp og sinn i en hektisk uke."
     },
-    "commercial": {
-      "title": "Kontorrenhold",
-      "text": "Profesjonelle hygieneløsninger for bedrifter og studioer."
+    "m40": {
+      "title": "40 min Massasje",
+      "price": "NOK 775",
+      "description_short": "Den perfekte mellomtingen. Balansert terapi for dyp avspenning.",
+      "description_long": "Den perfekte mellomtingen. En 40-minutters massasje gir nok tid til å koble helt av, samtidig som terapeuten kan jobbe i dybden på gjenstridige muskelknuter. Den tilbyr en balansert kombinasjon av målrettet behandling for rygg, nakke og skuldre, sammen med beroligende avspenningsteknikker som etterlater mottakeren fullstendig uthvilt."
     },
-    "deep": {
-      "title": "Hovedrengjøring",
-      "text": "En grundig dypvask for en komplett nullstilling av ditt miljø."
-    }
+    "m50": {
+      "title": "50 min Massasje",
+      "price": "NOK 925",
+      "description_short": "Den ultimate flukten for hele kroppen. Intensivt fokus på kroniske spenninger.",
+      "description_long": "Den ultimate flukten. Denne omfattende 50-minutters massasjen gir rom for en fullstendig kroppsavslapning eller et dypt, intensivt fokus på flere områder med kroniske spenninger. Det er den perfekte gaven til noen som virkelig fortjener å bli skjemt bort, og tilbyr rikelig med tid til å koble fra verden, lindre dyp muskelttretthet og gjenopprette totalt velvære."
+    },
+    "select": "Velg"
   },
   "benefits": {
-    "vetted": {
-      "title": "Kvalifisert personell",
-      "text": "Grundige bakgrunnsjekker og profesjonell opplæring for alle ansatte."
-    },
     "eco": {
-      "title": "Miljøvennlig",
-      "text": "Trygge, biologisk nedbrytbare formler for barn, kjæledyr og alle overflater."
+      "title": "Organiske Oljer",
+      "text": "Kaldpressede, lokalt hentede botaniske oljer skreddersydd for din huds behov."
     },
-    "satisfaction": {
-      "title": "Garantert resultat",
-      "text": "En plettfri finish eller et kostnadsfritt nytt besøk innen 24 timer."
+    "waves": {
+      "title": "Nervesystem-nullstilling",
+      "text": "Teknikker spesielt designet for å skifte deg fra kamp-eller-flukt til hvile-og-fordøyelse."
     },
-    "pricing": {
-      "title": "Fastpris",
-      "text": "Transparent prising uten skjulte gebyrer."
+    "nature": {
+      "title": "Jordet Tilnærming",
+      "text": "Behandlinger som fokuserer på forbindelsen mellom fysisk spenning og mentalt stress."
+    },
+    "chair": {
+      "title": "Stille Miljø",
+      "text": "Et akustisk behandlet rom som sikrer fullstendig stillhet og sensorisk fred."
     }
   },
   "faq": {
@@ -69,81 +66,47 @@
     "ask_question": "Still et spørsmål",
     "items": [
       {
-        "q": "Hvilke rengjøringsmidler bruker dere?",
-        "a": "Vi bruker miljøvennlige, plantebaserte formler som er biologisk nedbrytbare og trygge for overflater, barn og kjæledyr."
+        "q": "Hvilke oljer bruker dere til behandlingene?",
+        "a": "Vi bruker utelukkende kaldpressede, lokalt produserte organiske oljer skreddersydd for din huds behov og nåværende fysiske tilstand."
       },
       {
-        "q": "Må jeg være til stede under rengjøringen?",
-        "a": "Nei, de fleste av våre kunder gir oss nøkkel. Våre ansatte er trent til å jobbe selvstendig og respektere ditt privatliv."
+        "q": "Må jeg forberede meg før timen?",
+        "a": "Ingen spesiell forberedelse er nødvendig. Vi anbefaler å ankomme 10 minutter før for å slå deg til ro, nyte en varm urtete og koble av fra byens støy."
       },
       {
-        "q": "Hvordan bestiller jeg en vask?",
-        "a": "Du kan bestille direkte via vårt kontaktskjema eller per telefon. Vi bekrefter din avtale og gir et pristilbud innen 24 timer."
+        "q": "Hvordan bestiller jeg en time?",
+        "a": "Du kan bestille direkte via vårt kontaktskjema eller ved å ta kontakt på hey{'@'}constantcare.no. Vi bekrefter din avtale innen få timer."
       },
       {
-        "q": "Er rengjøringsmidlene deres trygge for kjæledyr?",
-        "a": "Ja, vi bruker utelukkende 100 % organiske, giftfrie midler som er helt trygge for kjæledyr, barn og allergikere."
+        "q": "Tilpasser dere behandlingen ved spesifikke fysiske plager eller skader?",
+        "a": "Ja. Før hver økt gjennomfører våre terapeuter en kort konsultasjon for å forstå din fysiske tilstand og tilpasse behandlingen deretter."
       },
       {
-        "q": "Hvilke områder i Oslo betjener dere?",
-        "a": "Vi leverer premium renholdstjenester i alle bydeler i Oslo og de nærliggende områdene i Viken."
+        "q": "Hvor er klinikken plassert?",
+        "a": "Vi holder til i det rolige nabolaget Majorstuen i Oslo, lett tilgjengelig, men likevel tilbaketrukket nok til å tilby fullstendig sensorisk fred."
       }
     ]
   },
   "contact": {
-    "title": "Kontakt oss",
-    "form_title": "Klar for en ny start?",
-    "address": "Oslo, Norge",
-    "phone": "+47 22 33 44 55",
-    "email": "post{'@'}ankarenhold.no",
-    "social_title": "Følg oss"
-  },
-  "footer": {
-    "description": "Profesjonelle renholdstjenester i Oslo. Fokusert på kvalitet, pålitelighet og sans for detaljer.",
-    "privacy": "Personvern",
-    "terms": "Vilkår for bruk",
-    "sustainability": "Bærekraftsrapport",
-    "developed_by": "Utviklet av Mariusv.dev",
-    "company": "SELSKAP",
-    "details": "DETALJER",
-    "stay_in_touch": "HOLD KONTAKTEN",
-    "oslo": "OSLO",
-    "rights": "© 2026 ANKARENHOLD AS. ALLE RETTIGHETER FORBEHOLDT."
+    "title": "Besøk klinikken",
+    "form_title": "Send en forespørsel",
+    "description": "Vi holder til i det rolige nabolaget Majorstuen, en kort spasertur fra store kollektivlinjer, men føles milevis unna byens mas. Vi tilbyr eksklusiv, helhetlig massasjeterapi i Oslo, med spesialisering innen dypvev, avspenning og regulering av nervesystemet.",
+    "address": "Majorstuveien 31 B, 0367 Oslo, Norge",
+    "email": "hey{'@'}constantcare.no",
+    "name_placeholder": "Ditt Navn",
+    "email_placeholder": "E-postadresse",
+    "message_placeholder": "Hvordan kan vi hjelpe deg?",
+    "submit": "Send Melding"
   },
   "testimonials": {
-    "title": "Kundeanmeldelser",
-    "subtitle": "Betrodd av hjem- og bedriftseiere i Oslo.",
-    "items": [
-      {
-        "quote": "Anka Renhold AS stilte opp på kort varsel. Ekstremt imponert over hvor nøye de var. Dette er to som virkelig kan jobben sin! Kommunikasjonen gikk plettfritt fra start til slutt.",
-        "author": "Karoline H.",
-        "role": "Privatkunde"
-      },
-      {
-        "quote": "Dette er andre gang jeg benytter Anka Renhold. Fantastisk kvalitet på arbeidet og de er utrolig hyggelige å ha med å gjøre! Anbefales til alle som trenger profesjonelt renhold.",
-        "author": "Magnus Solberg",
-        "role": "Konsulent"
-      },
-      {
-        "quote": "Jeg har aldri hatt så rene vinduer før! Kan varmt anbefale Anka Renhold for deres raske kommunikasjon og superkvalitet på vindusvasken. Ryddige, hyggelige og pålitelige.",
-        "author": "Siri Jensen",
-        "role": "Huseier"
-      },
-      {
-        "quote": "De leverte høy kvalitet på min flyttevask. De tok spesifikke detaljer på strak arm og gjennomførte arbeidet effektivt og med stor nøyaktighet. Jeg ble veldig fornøyd med resultatet!",
-        "author": "Anders Berg",
-        "role": "Daglig leder"
-      },
-      {
-        "quote": "Veldig fornøyd! Hele prosessen var ryddig og de er superhyggelige. Effektiv gjennomføring uten skjulte kostnader som parkering eller bom. Kun ærlig timepris fra de kom inn døra!",
-        "author": "Emilie Foss",
-        "role": "Arkitekt"
-      },
-      {
-        "quote": "God kommunikasjon i forkant og underveis. De gjør et veldig nøye arbeid og er både effektive og fleksible. Hele opplevelsen var veldig ryddig, og vi er utrolig fornøyde.",
-        "author": "Thomas Dahl",
-        "role": "Studioeier"
-      }
-    ]
+    "quote": "Å komme inn til ConstantCare føles som å forlate byen helt. Oppmerksomheten på detaljer, fra duften av oljene til det bevisste tempoet i massasjen, er uovertruffen i Oslo. Virkelig en gjenopprettende opplevelse.",
+    "author": "E. Johansen"
+  },
+  "footer": {
+    "privacy": "Personvern",
+    "terms": "Vilkår for bruk",
+    "booking": "Bestillingsvilkår",
+    "sitemap": "Nettstedskart",
+    "rights": "© 2026 Constant Care Carmen Cojocaru - Org. nr. 816 374 332"
   }
 }

@@ -1,65 +1,62 @@
 {
   "nav": {
     "services": "Services",
-    "philosophy": "Our Approach",
+    "philosophy": "About",
     "testimonials": "Testimonials",
-    "reviews": "Reviews",
     "faq": "FAQ",
     "cta": "Contact Us"
   },
   "hero": {
-    "eyebrow": "PROFESSIONAL CLEANING IN OSLO",
-    "title": "Premium Cleaning Services",
-    "title_part1": "Premium",
-    "title_part2": "Cleaning Services",
-    "description": "Reliable and high-quality cleaning for homes and offices. We focus on precision, quality, and your complete satisfaction.",
-    "cta": "Book Now"
+    "eyebrow": "Holistic Healing",
+    "title": "Holistic Healing in the Heart of Oslo.",
+    "description": "A serene escape from the city. Grounded in nature, guided by touch. Reconnect with your body's natural rhythm.",
+    "cta": "Discover Treatments"
   },
-  "pillars": {
-    "sustainable": {
-      "title": "Sustainable",
-      "text": "We use eco-friendly, plant-based cleaning solutions that are safe for everyone."
-    },
-    "ethical": {
-      "title": "Punctual",
-      "text": "Our team of professionals ensures timely arrival and consistent scheduling for a service you can set your clock to."
-    },
-    "detail": {
-      "title": "Quality",
-      "text": "We pay close attention to every detail, ensuring your space is always spotless and organized."
-    }
+  "intro": {
+    "eyebrow": "Philosophy",
+    "title": "Rooted in the landscape, focused on the individual.",
+    "text1": "At ConstantCare, we believe that true restoration requires more than just physical manipulation. It requires a deliberate step away from the noise, entering a space designed to quiet the mind and ground the spirit.",
+    "text2": "Our approach integrates traditional Scandinavian therapeutic techniques with a holistic understanding of the nervous system. Every session is curated to your current state of being, utilizing organic oils crafted from local flora."
   },
   "services": {
-    "title": "Our Services",
-    "residential": {
-      "title": "Home Cleaning",
-      "text": "Standard cleaning services tailored for modern homes."
+    "eyebrow": "Offerings",
+    "title": "Curated Therapies",
+    "m30": {
+      "title": "30 min Massage",
+      "price": "NOK 625",
+      "description_short": "Quick, targeted relief for busy schedules. Focus on specific tension areas.",
+      "description_long": "Give the gift of quick, targeted relief. This 30-minute massage is perfect for those with busy schedules who need to melt away stress or focus on a specific problem area, like a stiff neck, tight shoulders, or lower back tension. It is the ideal “pick-me-up” to reset the body and mind during a hectic week."
     },
-    "commercial": {
-      "title": "Office Cleaning",
-      "text": "Professional hygiene solutions for businesses and studios."
+    "m40": {
+      "title": "40 min Massage",
+      "price": "NOK 775",
+      "description_short": "The perfect middle ground. Balanced therapy for deep relaxation.",
+      "description_long": "The perfect middle ground. A 40-minute massage provides enough time to fully unwind while allowing the therapist to work deeply on stubborn muscle knots. It offers a balanced combination of targeted therapy for the back, neck, and shoulders, along with soothing relaxation techniques to leave the recipient feeling completely refreshed."
     },
-    "deep": {
-      "title": "Deep Cleaning",
-      "text": "A comprehensive deep clean for a complete reset of your environment."
-    }
+    "m50": {
+      "title": "50 min Massage",
+      "price": "NOK 925",
+      "description_short": "The ultimate full-body escape. Intensive focus on chronic tension.",
+      "description_long": "The ultimate escape. This comprehensive 50-minute massage allows for a full-body relaxation experience or a deep, intensive focus on multiple areas of chronic tension. It is the perfect gift for someone who truly deserves to be pampered, offering ample time to disconnect from the world, relieve deep-seated muscle fatigue, and restore total well-being."
+    },
+    "select": "Select"
   },
   "benefits": {
-    "vetted": {
-      "title": "Vetted Staff",
-      "text": "Rigorous background checks and professional training for all employees."
-    },
     "eco": {
-      "title": "Eco-friendly",
-      "text": "Safe, biodegradable formulas for children, pets, and all surfaces."
+      "title": "Organic Oils",
+      "text": "Cold-pressed, locally sourced botanical oils tailored to your skin's needs."
     },
-    "satisfaction": {
-      "title": "Guaranteed Results",
-      "text": "A flawless finish or a complimentary return within 24 hours."
+    "waves": {
+      "title": "Nervous System Reset",
+      "text": "Techniques specifically designed to shift you from fight-or-flight to rest-and-digest."
     },
-    "pricing": {
-      "title": "Flat Rates",
-      "text": "Transparent, upfront pricing with no hidden fees."
+    "nature": {
+      "title": "Grounded Approach",
+      "text": "Treatments that focus on the connection between physical tension and mental stress."
+    },
+    "chair": {
+      "title": "Quiet Environment",
+      "text": "An acoustically treated space ensuring complete silence and sensory peace."
     }
   },
   "faq": {
@@ -69,81 +66,47 @@
     "ask_question": "Ask a Question",
     "items": [
       {
-        "q": "What cleaning products do you use?",
-        "a": "We use eco-friendly, plant-based formulas that are biodegradable and safe for all surfaces, children, and pets."
+        "q": "What oils do you use for treatments?",
+        "a": "We use exclusively cold-pressed, locally sourced organic botanical oils tailored to your skin's needs and current physical state."
       },
       {
-        "q": "Do I need to be present during the cleaning?",
-        "a": "No, most of our clients provide key access. Our staff are trained to work independently and respect your privacy."
+        "q": "Do I need to prepare before my session?",
+        "a": "No special preparation is needed. We recommend arriving 10 minutes early to settle in, enjoy a warm herbal tea, and disconnect from the city noise."
       },
       {
-        "q": "How do I book a cleaning session?",
-        "a": "You can book directly via our contact form or by phone. We will confirm your appointment and provide a transparent quote within 24 hours."
+        "q": "How do I book a session?",
+        "a": "You can book directly via our contact form or by reaching out to hey{'@'}constantcare.no. We will confirm your appointment within a few hours."
       },
       {
-        "q": "Are your cleaning agents safe for pets?",
-        "a": "Yes, we exclusively use 100% organic, non-toxic agents that are completely safe for pets, children, and people with allergies."
+        "q": "Can you accommodate specific physical conditions or injuries?",
+        "a": "Yes. Before every session, our therapists conduct a brief consultation to understand your physical condition and customize the treatment accordingly."
       },
       {
-        "q": "What areas in Oslo do you serve?",
-        "a": "We provide premium cleaning services across all major districts of Oslo and the surrounding Viken area."
+        "q": "Where is the clinic located?",
+        "a": "We are located in the quiet neighborhood of Majorstuen in Oslo, easily accessible yet secluded enough to offer complete sensory peace."
       }
     ]
   },
   "contact": {
-    "title": "Get In Touch",
-    "form_title": "Ready for a reset?",
-    "address": "Oslo, Norway",
-    "phone": "+47 22 33 44 55",
-    "email": "post{'@'}ankarenhold.no",
-    "social_title": "Follow Us"
-  },
-  "footer": {
-    "description": "Professional cleaning services in Oslo. Focused on quality, reliability, and attention to detail.",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service",
-    "sustainability": "Sustainability",
-    "developed_by": "Developed By Mariusv.dev",
-    "company": "COMPANY",
-    "details": "DETAILS",
-    "stay_in_touch": "STAY IN TOUCH",
-    "oslo": "OSLO",
-    "rights": "© 2026 ANKARENHOLD AS. ALL RIGHTS RESERVED."
+    "title": "Visit the Clinic",
+    "form_title": "Request an Inquiry",
+    "description": "Located in the quiet neighborhood of Majorstuen, our studio is a short walk from major transit lines but feels miles away from the urban rush. We offer high-end, holistic massage therapy in Oslo, specializing in deep tissue, relaxation, and nervous system regulation.",
+    "address": "Majorstuvein 31 B, 0367 Oslo, Norway",
+    "email": "hey{'@'}constantcare.no",
+    "name_placeholder": "Your Name",
+    "email_placeholder": "Email Address",
+    "message_placeholder": "How can we help you?",
+    "submit": "Send Message"
   },
   "testimonials": {
-    "title": "Testimonials",
-    "subtitle": "Trusted by home and business owners in Oslo.",
-    "items": [
-      {
-        "quote": "Anka Renhold AS stepped in at very short notice. I was extremely impressed by their thoroughness; they truly know their craft. Communication was seamless from start to finish.",
-        "author": "Karoline H.",
-        "role": "Private Customer"
-      },
-      {
-        "quote": "This is the second time I've used Anka Renhold. The work quality is fantastic, and they are incredibly pleasant to deal with! Highly recommended for anyone needing professional cleaning.",
-        "author": "Magnus Solberg",
-        "role": "Consultant"
-      },
-      {
-        "quote": "I have never had such clean windows before! I warmly recommend Anka Renhold for their quick communication and superb window cleaning quality. Tidy, friendly, and reliable.",
-        "author": "Siri Jensen",
-        "role": "Homeowner"
-      },
-      {
-        "quote": "They delivered high quality on my move-out cleaning. They handled specific requirements with ease and completed the work efficiently and with great precision. Very happy with the result!",
-        "author": "Anders Berg",
-        "role": "General Manager"
-      },
-      {
-        "quote": "Very satisfied! The entire process was orderly and they are super friendly. Efficient execution with no hidden costs like parking or tolls. Just an honest hourly rate!",
-        "author": "Emilie Foss",
-        "role": "Architect"
-      },
-      {
-        "quote": "Excellent communication before and during the job. They do very thorough work and are both efficient and flexible. The whole experience was very professional and we are very pleased.",
-        "author": "Thomas Dahl",
-        "role": "Studio Owner"
-      }
-    ]
+    "quote": "Entering ConstantCare feels like leaving the city entirely. The attention to detail, from the scent of the oils to the deliberate pace of the massage, is unmatched in Oslo. Truly a restorative experience.",
+    "author": "E. Johansen"
+  },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "booking": "Booking Policy",
+    "sitemap": "Sitemap",
+    "rights": "© 2026 Constant Care Carmen Cojocaru - Org. nr. 816 374 332"
   }
 }

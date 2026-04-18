@@ -3,7 +3,7 @@ import { Shield as LucideShield, Eye as LucideEye, Lock as LucideLock } from 'lu
 const { t } = useI18n()
 
 useSeoMeta({
-  title: 'Privacy Policy | Ankarenhold',
+  title: 'Privacy Policy | ConstantCare',
   description: 'How we handle and protect your personal information.',
 })
 </script>

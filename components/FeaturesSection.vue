@@ -1,56 +1,38 @@
 <script setup>
-import { Leaf as LucideLeaf, Clock as LucideClock, Target as LucideFocus } from 'lucide-vue-next'
 const { t } = useI18n()
-const pillars = computed(() => [
-  {
-    key: 'sustainable',
-    icon: LucideLeaf,
-    title: t('pillars.sustainable.title'),
-    text: t('pillars.sustainable.text')
-  },
-  {
-    key: 'ethical',
-    icon: LucideClock,
-    title: t('pillars.ethical.title'),
-    text: t('pillars.ethical.text')
-  },
-  {
-    key: 'detail',
-    icon: LucideFocus,
-    title: t('pillars.detail.title'),
-    text: t('pillars.detail.text')
-  }
-])
 </script>
 
 <template>
-  <section id="philosophy" class="section-padding bg-surface">
-    <div class="container-content">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-24">
-        <div 
-          v-for="(pillar, index) in pillars" 
-          :key="pillar.key"
-          class="flex flex-col gap-8 group"
-          :class="index % 2 !== 0 ? 'md:mt-24' : ''"
-        >
-          <div class="w-16 h-16 rounded-2xl bg-surface-low border border-on-surface/5 flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-sm">
-            <component :is="pillar.icon" :size="32" stroke-width="1.5" />
+  <section class="py-32 bg-[#faf9f6]">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div class="space-y-4">
+          <div class="w-12 h-12 rounded-full bg-[#d5e5ca] flex items-center justify-center text-[#596751]">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">eco</span>
           </div>
-          
-          <div>
-            <HeadingRenderPass
-              as="h2"
-              class="mb-4 text-2xl tracking-tight"
-              :text="pillar.title"
-              :uid="`pillar-${pillar.key}`"
-            />
-            <p class="text-on-surface/60 leading-relaxed max-w-[35ch] text-base text-sm md:text-base">
-              {{ pillar.text }}
-            </p>
+          <h4 class="font-sans text-lg font-medium text-[#1b1c1a]">{{ $t('benefits.eco.title') }}</h4>
+          <p class="font-sans text-sm text-[#444841] leading-relaxed">{{ $t('benefits.eco.text') }}</p>
+        </div>
+        <div class="space-y-4">
+          <div class="w-12 h-12 rounded-full bg-[#d5e5ca] flex items-center justify-center text-[#596751]">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">waves</span>
           </div>
-
-          <!-- Decorative Line -->
-          <div class="w-12 h-px bg-on-surface/10 group-hover:w-24 group-hover:bg-primary transition-all duration-700"></div>
+          <h4 class="font-sans text-lg font-medium text-[#1b1c1a]">{{ $t('benefits.waves.title') }}</h4>
+          <p class="font-sans text-sm text-[#444841] leading-relaxed">{{ $t('benefits.waves.text') }}</p>
+        </div>
+        <div class="space-y-4">
+          <div class="w-12 h-12 rounded-full bg-[#d5e5ca] flex items-center justify-center text-[#596751]">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">nature_people</span>
+          </div>
+          <h4 class="font-sans text-lg font-medium text-[#1b1c1a]">{{ $t('benefits.nature.title') }}</h4>
+          <p class="font-sans text-sm text-[#444841] leading-relaxed">{{ $t('benefits.nature.text') }}</p>
+        </div>
+        <div class="space-y-4">
+          <div class="w-12 h-12 rounded-full bg-[#d5e5ca] flex items-center justify-center text-[#596751]">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chair</span>
+          </div>
+          <h4 class="font-sans text-lg font-medium text-[#1b1c1a]">{{ $t('benefits.chair.title') }}</h4>
+          <p class="font-sans text-sm text-[#444841] leading-relaxed">{{ $t('benefits.chair.text') }}</p>
         </div>
       </div>
     </div>

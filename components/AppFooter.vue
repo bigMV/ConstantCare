@@ -2,61 +2,19 @@
 </script>
 
 <template>
-  <footer class="section-padding !pb-8 bg-surface-lowest border-t border-on-surface/5">
-    <div class="container-content">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 md:gap-24">
-        <!-- Brand -->
-        <div class="flex flex-col gap-8">
-          <div class="flex items-center gap-3">
-            <div class="brand-logo brand-logo--large">
-              <NuxtImg src="/logo.png" alt="Logo" class="w-full h-full object-contain brightness-0 invert" />
-            </div>
-            <span class="brand-text text-on-surface">
-              Ankarenhold
-            </span>
-          </div>
-          <p class="text-base text-sm md:text-base opacity-50 max-w-[30ch] leading-relaxed">
-            {{ $t('footer.description') }}
-          </p>
-        </div>
-
-        <!-- Links -->
-        <div class="flex flex-col gap-6">
-          <span class="eyebrow-label !opacity-30">{{ $t('footer.company') }}</span>
-          <NuxtLink to="/#services" class="text-sm hover:text-primary transition-all hover:translate-x-1">{{
-            $t('nav.services') }}</NuxtLink>
-          <NuxtLink to="/#philosophy" class="text-sm hover:text-primary transition-all hover:translate-x-1">{{
-            $t('nav.philosophy') }}</NuxtLink>
-          <NuxtLink to="/#faq" class="text-sm hover:text-primary transition-all hover:translate-x-1">{{ $t('nav.faq') }}
-          </NuxtLink>
-        </div>
-
-        <!-- Compliance / Details -->
-        <div class="flex flex-col gap-6">
-          <span class="eyebrow-label !opacity-30">{{ $t('footer.details') }}</span>
-          <NuxtLink to="/privacy-policy" class="text-sm hover:text-primary transition-all hover:translate-x-1">{{
-            $t('footer.privacy') }}</NuxtLink>
-          <NuxtLink to="/terms-of-service" class="text-sm hover:text-primary transition-all hover:translate-x-1">{{
-            $t('footer.terms') }}</NuxtLink>
-          <NuxtLink to="/sustainability-report" class="text-sm hover:text-primary transition-all hover:translate-x-1">{{
-            $t('footer.sustainability') }}</NuxtLink>
-        </div>
+  <footer class="w-full bg-[#f4f3f0] dark:bg-[#252623]">
+    <div class="flex flex-col md:flex-row justify-between items-center px-6 md:px-12 py-16 space-y-8 md:space-y-0 max-w-[1920px] mx-auto">
+      <NuxtLink to="/" class="flex items-center">
+        <NuxtImg src="/LogoConstantCare.png" alt="ConstantCare" class="h-6 md:h-8 w-auto" />
+      </NuxtLink>
+      <div class="flex flex-wrap justify-center gap-6 font-sans text-xs tracking-wider opacity-80">
+        <NuxtLink class="text-[#444841] dark:text-[#c4c8bf] hover:text-[#5d705d] underline underline-offset-4 decoration-[#5d705d]/30 transition-colors duration-300" to="/privacy-policy">{{ $t('footer.privacy') }}</NuxtLink>
+        <NuxtLink class="text-[#444841] dark:text-[#c4c8bf] hover:text-[#5d705d] underline underline-offset-4 decoration-[#5d705d]/30 transition-colors duration-300" to="/terms-of-service">{{ $t('footer.terms') }}</NuxtLink>
+        <a class="text-[#444841] dark:text-[#c4c8bf] hover:text-[#5d705d] underline underline-offset-4 decoration-[#5d705d]/30 transition-colors duration-300" href="#">{{ $t('footer.booking') }}</a>
+        <a class="text-[#444841] dark:text-[#c4c8bf] hover:text-[#5d705d] underline underline-offset-4 decoration-[#5d705d]/30 transition-colors duration-300" href="#">{{ $t('footer.sitemap') }}</a>
       </div>
-
-      <!-- Copyright -->
-      <div class="flex flex-col md:flex-row justify-between items-center gap-6 pt-12 border-t border-on-surface/5">
-        <span class="text-[9px] uppercase tracking-[0.3em] opacity-20">{{ $t('footer.rights') }}</span>
-        
-        <div class="flex items-center gap-4">
-          <a href="https://mariusv.dev" target="_blank" class="group/dev flex items-center gap-2">
-            <span class="text-[9px] uppercase tracking-[0.3em] opacity-20 group-hover/dev:opacity-60 transition-opacity duration-700">
-               {{ $t('footer.developed_by') }}
-            </span>
-            <div class="w-1 h-1 rounded-full bg-primary opacity-0 group-hover/dev:opacity-40 transition-all duration-700"></div>
-          </a>
-          <span class="text-[9px] opacity-10 select-none">/</span>
-          <span class="text-[9px] uppercase tracking-[0.3em] opacity-20"> {{ $t('footer.oslo') }}</span>
-        </div>
+      <div class="font-sans text-xs tracking-wider opacity-80 text-[#455846] dark:text-[#bccbb1]">
+        {{ $t('footer.rights') }}
       </div>
     </div>
   </footer>

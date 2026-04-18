@@ -1,5 +1,5 @@
 <script setup>
-import { Sparkles as LucideSparkles, Plus as LucidePlus } from 'lucide-vue-next'
+import { computed, ref } from 'vue'
 const { t, tm, rt } = useI18n()
 const faqs = computed(() => tm('faq.items'))
 
@@ -20,32 +20,14 @@ const toggle = (index) => {
             {{ $t('nav.faq') }}
           </span>
         </div>
-        <HeadingRenderPass 
-          as="h2" 
-          class="mb-8 font-serif italic"
-          :text="$t('faq.title')"
-          :delay="0.1"
-        />
+        <h2 class="text-3xl md:text-4xl font-light tracking-tight text-[#1b1c1a] mb-8 font-sans">
+          {{ $t('faq.title') }}
+        </h2>
         <p class="text-base text-on-surface/60 max-w-[30ch]">
           {{ $t('faq.subtitle') }}
         </p>
 
-        <!-- Desktop Card -->
-        <div
-          class="hidden lg:flex mt-auto p-12 lg:p-16 rounded-[3rem] bg-surface-low border border-on-surface/5 flex-col gap-8 group hover:bg-surface-high transition-colors duration-700 cursor-pointer"
-          @click="$router.push('/#contact')">
-          <LucideSparkles :size="48" class="text-primary group-hover:scale-110 transition-transform duration-500" />
-          <HeadingRenderPass 
-            as="h3" 
-            class="leading-snug"
-            :text="$t('faq.not_found_title')"
-            uid="faq-cta-desktop"
-            :delay="0.3"
-          />
-          <a href="#contact" class="btn btn-primary !self-start">
-            {{ $t('faq.ask_question') }}
-          </a>
-        </div>
+
       </div>
 
       <!-- FAQ Items -->
@@ -56,12 +38,12 @@ const toggle = (index) => {
           @click="toggle(index)">
           <button
             class="w-full text-left p-8 md:p-10 flex items-center justify-between gap-8 group-hover:pl-12 transition-all duration-700 cursor-pointer">
-            <span class="text-xl font-serif tracking-tight pr-8">
+            <span class="text-xl font-sans tracking-tight pr-8 text-[#1b1c1a]">
               {{ rt(item.q) }}
             </span>
-            <div class="w-14 h-14 rounded-full  flex items-center justify-center transition-all duration-500"
-              :class="activeIndex === index ? 'rotate-45  text-primary ' : 'rotate-0 text-on-surface/50 group-hover:text-primary'">
-              <LucidePlus :size="24" />
+            <div class="w-14 h-14 rounded-full flex items-center justify-center transition-all duration-500"
+              :class="activeIndex === index ? 'rotate-45 text-[#455846]' : 'rotate-0 text-[#1b1c1a]/50 group-hover:text-[#455846]'">
+              <span class="material-symbols-outlined text-2xl">add</span>
             </div>
           </button>
 
@@ -73,21 +55,7 @@ const toggle = (index) => {
           </div>
         </div>
 
-        <!-- Mobile Card -->
-        <div
-          class="flex lg:hidden mt-8 p-10 rounded-[2.5rem] bg-surface-low border border-on-surface/5 flex-col gap-6 group hover:bg-surface-high transition-colors duration-700 cursor-pointer"
-          @click="$router.push('/#contact')">
-          <LucideSparkles :size="40" class="text-primary" />
-          <HeadingRenderPass 
-            as="h3" 
-            class="text-2xl leading-snug"
-            :text="$t('faq.not_found_title')"
-            uid="faq-cta-mobile"
-          />
-          <a href="#contact" class="btn btn-primary !self-start text-sm">
-            {{ $t('faq.ask_question') }}
-          </a>
-        </div>
+
       </div>
     </div>
   </section>

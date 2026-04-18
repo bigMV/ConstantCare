@@ -3,7 +3,7 @@ import { FileText as LucideFileText, XCircle as LucideXCircle, CheckCircle as Lu
 const { t } = useI18n()
 
 useSeoMeta({
-  title: 'Terms of Service | Ankarenhold',
+  title: 'Terms of Service | ConstantCare',
   description: 'Our agreement for professional cleaning services.',
 })
 </script>
@@ -29,7 +29,7 @@ useSeoMeta({
         </div>
         <div class="pl-10 border-l border-on-surface/5 text-on-surface/80">
           <p>
-            Ankarenhold provides professional cleaning services as described in your chosen cleaning plan. We aim to deliver high-quality results for every client.
+            ConstantCare provides professional cleaning services as described in your chosen cleaning plan. We aim to deliver high-quality results for every client.
           </p>
         </div>
       </section>
