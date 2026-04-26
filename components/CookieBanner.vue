@@ -22,11 +22,7 @@ const acceptCookies = () => {
   hasAccepted.value = true
 }
 
-const declineCookies = () => {
-  localStorage.setItem('cookie-consent', 'declined')
-  isVisible.value = false
-  hasAccepted.value = true
-}
+
 </script>
 
 <template>
@@ -40,7 +36,7 @@ const declineCookies = () => {
   >
     <div 
       v-if="isVisible" 
-      class="fixed bottom-6 right-6 z-[1000] w-full max-w-[340px] md:max-w-[400px]"
+      class="fixed bottom-6 left-6 right-6 md:left-auto md:right-10 z-[1000] max-w-[440px] md:max-w-[400px] mx-auto md:mx-0"
     >
       <div class="bg-surface/80 backdrop-blur-2xl border border-on-surface/5 p-8 md:p-10 rounded-3xl shadow-2xl flex flex-col gap-6">
         <div class="space-y-3">
@@ -56,12 +52,6 @@ const declineCookies = () => {
             class="flex-1 bg-accent text-white px-6 py-3 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-accent-dim transition-all duration-300 transform active:scale-95"
           >
             Accept
-          </button>
-          <button 
-            @click="declineCookies"
-            class="flex-1 bg-on-surface/5 text-on-surface/60 px-6 py-3 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-on-surface/10 transition-all duration-300 transform active:scale-95"
-          >
-            Settings
           </button>
         </div>
       </div>

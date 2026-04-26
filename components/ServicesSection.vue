@@ -4,7 +4,7 @@ const localePath = useLocalePath()
 </script>
 
 <template>
-  <section class="py-32 bg-surface-lowest" id="services">
+  <section class="py-16 md:py-32 bg-surface-lowest" id="services">
     <div class="max-w-7xl mx-auto px-6 lg:px-12">
       <div class="max-w-3xl space-y-4 mb-20 text-left">
         <span 
@@ -24,9 +24,7 @@ const localePath = useLocalePath()
         <!-- 30 Min -->
         <div v-motion="{ initial: { opacity: 0, y: 30 }, visibleOnce: { opacity: 1, y: 0, transition: { delay: 400, duration: 1000 } } }">
           <div class="bg-surface-container p-10 rounded-xl transition-transform duration-500 hover:-translate-y-2 relative group overflow-hidden shadow-sm h-full flex flex-col">
-            <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
-              <span class="material-symbols-outlined text-6xl text-accent">schedule</span>
-            </div>
+
             <div class="relative z-10 flex-grow">
               <h3 class="text-on-surface mb-2">{{ $t('services.m30.title') }}</h3>
               <div class="text-sm! text-accent mb-6">{{ $t('services.m30.price') }}</div>
@@ -56,9 +54,7 @@ const localePath = useLocalePath()
         <!-- 40 Min -->
         <div v-motion="{ initial: { opacity: 0, y: 30 }, visibleOnce: { opacity: 1, y: 0, transition: { delay: 600, duration: 1000 } } }">
           <div class="bg-surface-container p-10 rounded-xl transition-transform duration-500 hover:-translate-y-2 relative group overflow-hidden shadow-sm h-full flex flex-col">
-            <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
-              <span class="material-symbols-outlined text-6xl text-accent">schedule</span>
-            </div>
+
             <div class="relative z-10 flex-grow">
               <h3 class="text-on-surface mb-2">{{ $t('services.m40.title') }}</h3>
               <div class="text-sm! text-accent mb-6">{{ $t('services.m40.price') }}</div>
@@ -88,9 +84,7 @@ const localePath = useLocalePath()
         <!-- 50 Min -->
         <div v-motion="{ initial: { opacity: 0, y: 30 }, visibleOnce: { opacity: 1, y: 0, transition: { delay: 800, duration: 1000 } } }">
           <div class="bg-surface-container p-10 rounded-xl transition-transform duration-500 hover:-translate-y-2 relative group overflow-hidden shadow-sm h-full flex flex-col">
-            <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
-              <span class="material-symbols-outlined text-6xl text-accent">schedule</span>
-            </div>
+
             <div class="relative z-10 flex-grow">
               <h3 class="text-on-surface mb-2">{{ $t('services.m50.title') }}</h3>
               <div class="text-sm! text-accent mb-6">{{ $t('services.m50.price') }}</div>

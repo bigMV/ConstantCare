@@ -57,6 +57,9 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     background-color: var(--color-surface);
     color: var(--color-on-surface);
@@ -425,6 +428,12 @@
     background: linear-gradient(to bottom, transparent 20%, rgba(27, 28, 26, 0.9) 100%);
   }
 
+  @media (max-width: 767px) {
+    .product-card-editorial .overlay {
+      background: linear-gradient(to bottom, transparent 10%, rgba(27, 28, 26, 0.85) 100%);
+    }
+  }
+
   .product-card-editorial .title {
     font-family: var(--font-sans);
     font-size: 1.5rem;
@@ -446,18 +455,8 @@
   /* Sliding View Button from Bottom */
   .product-card-editorial .view-action {
     display: block;
-    width: fit-content;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
     color: #ffffff;
-    padding: 0.75rem 1.25rem;
-    border-radius: 99px;
-    font-size: 0.625rem;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    font-weight: 700;
-
     /* Animation state: Hidden and collapsed */
     max-height: 0;
     opacity: 0;
@@ -467,8 +466,32 @@
     transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
+  .product-card-editorial .action-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.75rem 1.25rem;
+    border-radius: 99px;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+  }
+
+  @media (max-width: 767px) {
+    .product-card-editorial .view-action {
+      max-height: 200px;
+      opacity: 1;
+      transform: translateY(0);
+      margin-top: 1.5rem;
+    }
+  }
+
   .product-card-editorial:hover .view-action {
-    max-height: 100px;
+    max-height: 200px;
     opacity: 1;
     transform: translateY(0);
     margin-top: 1.5rem;

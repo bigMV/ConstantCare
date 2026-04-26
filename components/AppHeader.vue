@@ -51,8 +51,10 @@ const translatedNavigation = computed(() => [
     <header 
       class="fixed top-0 left-0 w-full z-110 transition-all duration-500"
       :class="[
-        isStuck ? 'bg-surface/90 backdrop-blur-xl py-3 shadow-sm' : 'bg-transparent py-6',
-        isNavOpen ? 'bg-transparent shadow-none' : ''
+        isNavOpen 
+          ? 'bg-transparent shadow-none border-b-transparent' 
+          : (isStuck ? 'bg-surface/90 backdrop-blur-xl shadow-sm border-b border-on-surface/5' : 'bg-transparent border-b border-transparent'),
+        isStuck ? 'py-3' : 'py-6'
       ]"
     >
       <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-row items-center justify-between">
@@ -85,7 +87,7 @@ const translatedNavigation = computed(() => [
           
           <!-- Book Button (Desktop only) -->
           <NuxtLink 
-            :to="localePath({ path: '/', hash: '#contact' })" 
+            :to="localePath({ path: '/', hash: '#services' })" 
             class="hidden lg:inline-flex items-center justify-center bg-accent text-white px-6 py-3 rounded-md hover:bg-accent-dim transition-colors duration-300"
           >
             {{ $t('hero.cta') }}
@@ -135,7 +137,7 @@ const translatedNavigation = computed(() => [
             class="mt-12 w-full"
           >
             <NuxtLink 
-              :to="localePath({ path: '/', hash: '#contact' })" 
+              :to="localePath({ path: '/', hash: '#services' })" 
               class="inline-flex items-center justify-center bg-accent text-white px-10 py-5 rounded-md shadow-xl w-full"
               @click="closeNav"
             >

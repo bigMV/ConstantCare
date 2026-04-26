@@ -3,7 +3,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <section class="py-32 bg-surface-lowest">
+  <section class="py-16 md:py-32 bg-surface-lowest">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
       <div class="space-y-4 text-left mb-20">
         <span 

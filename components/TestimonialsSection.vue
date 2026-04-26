@@ -52,7 +52,7 @@ const { pause, resume } = useRafFn(() => {
 </script>
 
 <template>
-  <section class="py-32 bg-surface-lowest relative overflow-hidden" id="testimonials">
+  <section class="py-16 md:py-32 bg-surface-lowest relative overflow-hidden" id="testimonials">
     <!-- Section Header -->
     <div class="max-w-7xl mx-auto px-6 lg:px-12 mb-16">
       <div class="max-w-3xl space-y-4 text-left">

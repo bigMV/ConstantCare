@@ -3,7 +3,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <section class="py-32 bg-surface-lowest" id="contact">
+  <section class="py-16 md:py-32 bg-surface-lowest" id="contact">
     <div class="max-w-7xl mx-auto px-6 lg:px-12">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
         <!-- Contact Info & SEO Text -->

@@ -10,11 +10,11 @@ const toggle = (index) => {
 </script>
 
 <template>
-  <section id="faq" class="py-32 bg-surface">
+  <section id="faq" class="py-16 md:py-32 bg-surface">
     <div class="max-w-7xl mx-auto px-6 lg:px-12">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-24 items-start">
         <!-- Left: Header Content -->
-        <div class="space-y-6 lg:sticky lg:top-32">
+        <div class="space-y-4 lg:space-y-6 lg:sticky lg:top-32">
           <div class="space-y-4">
             <span 
               class="eyebrow block"
@@ -46,7 +46,7 @@ const toggle = (index) => {
             v-motion="{ initial: { opacity: 0, y: 20 }, visibleOnce: { opacity: 1, y: 0, transition: { delay: 400 + (index * 100), duration: 1000 } } }"
           >
             <button
-              class="w-full text-left p-8 md:p-10 flex items-center justify-between gap-8 group-hover:pl-12 transition-all duration-700 cursor-pointer">
+              class="w-full text-left py-8 px-0 md:p-10 flex items-center justify-between gap-8 group-hover:pl-4 md:group-hover:pl-12 transition-all duration-700 cursor-pointer">
               <span class="pr-8 text-on-surface">
                 {{ rt(item.q) }}
               </span>
@@ -56,7 +56,7 @@ const toggle = (index) => {
               </div>
             </button>
 
-            <div class="transition-all duration-700 ease-in-out px-8 md:px-12 overflow-hidden"
+            <div class="transition-all duration-700 ease-in-out px-0 md:px-12 overflow-hidden"
               :class="activeIndex === index ? 'max-h-125 pb-10 opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-4'">
               <p class="text-on-surface-variant max-w-[60ch] mb-0 leading-relaxed">
                 {{ rt(item.a) }}

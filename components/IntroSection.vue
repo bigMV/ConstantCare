@@ -3,9 +3,9 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <section class="py-32 bg-surface-lowest" id="about">
+  <section class="pt-32 pb-16 md:py-32 bg-surface-lowest" id="about">
     <div class="max-w-7xl mx-auto px-6 lg:px-12">
-      <div class="max-w-3xl space-y-12">
+      <div class="max-w-3xl space-y-4 md:space-y-12">
         <div class="space-y-4">
           <span 
             class="eyebrow block"
