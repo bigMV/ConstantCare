@@ -45,7 +45,8 @@
     },
     "select": "Velg",
     "see_more": "Se Mer",
-    "book_now": "Bestill Nå"
+    "book_now": "Bestill Nå",
+    "voucher_alt": "ConstantCare Terapeutisk Massasje Gavekort - Eksklusiv Velværeopplevelse i Oslo"
   },
   "benefits": {
     "eyebrow": "Fordeler",
@@ -108,16 +109,28 @@
   },
   "testimonials": [
     {
-      "quote": "Å komme inn til ConstantCare føles som å forlate byen helt. Oppmerksomheten på detaljer, fra duften av oljene til det bevisste tempoet i massasjen, er uovertruffen i Oslo. Virkelig en gjenopprettende opplevelse.",
-      "author": "E. Johansen"
+      "quote": "Jeg hadde hatt vedvarende smerter i venstre skulder, så jeg bestilte en massasje her på sparket. Det var uten tvil den beste massasjen jeg noen gang har fått! Vil absolutt anbefale dette til alle som sliter med stive skuldre 🌟",
+      "author": "Imke H."
     },
     {
-      "quote": "Nullstillingen av nervesystemet var akkurat det jeg trengte. Jeg har ikke følt meg så jordet på flere måneder. Atmosfæren er rolig og behandlingen er i verdensklasse.",
-      "author": "M. Sjöberg"
+      "quote": "Jeg hadde en svangerskapsmassasje hos Carmen i dag, og det var en virkelig fantastisk opplevelse. Hun er veldig dyktig og fikk meg til å føle meg helt komfortabel og avslappet gjennom hele økten. Massasjen var perfekt, med helt riktig trykk, og akkurat det jeg trengte.",
+      "author": "Elena Brugiati"
     },
     {
-      "quote": "En genuint helhetlig tilnærming til velvære. Ikke bare en massasje, men en komplett sensorisk rekalibrering. Anbefales på det sterkeste for alle som søker dybde og omsorg.",
-      "author": "L. Andersson"
+      "quote": "Carmen har fantastiske hender! Jeg fikk en kjempegod gravidmassasje som var sårt tiltrengt. Carmen er omsorgsfull og forsiktig med meg og min 37 uker gamle mage; hun visste nøyaktig hvor jeg trengte mer trykk og hvor det burde være mindre. Hun brukte akkurat riktig mengde olje og musikk. Anbefales på det sterkeste!",
+      "author": "Bao Tran Tran"
+    },
+    {
+      "quote": "Carmen er en av de beste massasjeterapeutene jeg har møtt. Hun har en nydelig blanding av dyp kunnskap kombinert med en evne til å lytte med hendene. Anbefales på det sterkeste!",
+      "author": "Anne Solgaard"
+    },
+    {
+      "quote": "Jeg fant tilfeldigvis dette stedet og ga det et forsøk – veldig dyktig og profesjonelt! Jeg kommer definitivt tilbake neste gang jeg besøker Oslo. For de som kommer hit for første gang: det er en QR-kode for ringeklokke på veggen, og nabobutikken er en møbelforretning, så det er veldig lett å finne.",
+      "author": "Laura Lan"
+    },
+    {
+      "quote": "Eieren vet tydeligvis hva hun driver med. Jeg likte hvordan hun forklarte hvilke muskler jeg hadde mest problemer med, og hvordan hun fant trykkpunkter og jobbet med dem for å løsne spenningene. Hun gir også nyttige forslag til øvelser som utfyller massasjen.",
+      "author": "Simply. Irmina"
     }
   ],
   "footer": {

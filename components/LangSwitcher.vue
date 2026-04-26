@@ -5,12 +5,13 @@ const router = useRouter()
 
 const toggleLocale = async () => {
   const next = locale.value === 'en' ? 'no' : 'en'
+  const nextLabel = next === 'no' ? 'Norsk' : 'English'
   
   if (window.location.hash) {
     await router.replace({ hash: '' })
   }
   
-  triggerTransition(() => setLocale(next))
+  triggerTransition(() => setLocale(next), nextLabel)
 }
 </script>
 

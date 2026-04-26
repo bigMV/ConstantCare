@@ -15,7 +15,8 @@ const services = computed(() => [
     title: t('services.m30.title'),
     price: t('services.m30.price'),
     description: t('services.m30.description_short'),
-    image: '/images/shop/product_30min.png',
+    image: '/images/shop/therapeutic-massage-gift-voucher-oslo.jpg',
+    alt: t('services.voucher_alt'),
     vippsUrl: 'https://betal.vipps.no/fxi9fh'
   },
   {
@@ -23,7 +24,8 @@ const services = computed(() => [
     title: t('services.m40.title'),
     price: t('services.m40.price'),
     description: t('services.m40.description_short'),
-    image: '/images/shop/product_40min.png',
+    image: '/images/shop/therapeutic-massage-gift-voucher-oslo.jpg',
+    alt: t('services.voucher_alt'),
     vippsUrl: 'https://betal.vipps.no/hih29f'
   },
   {
@@ -31,7 +33,8 @@ const services = computed(() => [
     title: t('services.m50.title'),
     price: t('services.m50.price'),
     description: t('services.m50.description_short'),
-    image: '/images/shop/product_50min.png',
+    image: '/images/shop/therapeutic-massage-gift-voucher-oslo.jpg',
+    alt: t('services.voucher_alt'),
     vippsUrl: 'https://betal.vipps.no/nlna1k'
   }
 ])
@@ -74,7 +77,7 @@ const services = computed(() => [
           }"
         >
           <div class="image-container">
-            <NuxtImg :src="product.image" class="w-full h-full object-cover" />
+            <NuxtImg :src="product.image" :alt="product.alt" class="w-full h-full object-cover" />
             <!-- Immersive Overlay -->
             <div class="overlay">
               <div class="space-y-1">

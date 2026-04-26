@@ -1,15 +1,15 @@
 <script setup>
-const { isTransitioning } = usePageTransition()
+const { isTransitioning, targetLanguage } = usePageTransition()
 </script>
 
 <template>
   <Transition
-    enter-active-class="transition duration-500 ease-[cubic-bezier(0.85, 0, 0.15, 1)]"
-    enter-from-class="translate-y-full"
-    enter-to-class="translate-y-0"
-    leave-active-class="transition duration-500 ease-[cubic-bezier(0.85, 0, 0.15, 1)]"
-    leave-from-class="translate-y-0"
-    leave-to-class="-translate-y-full"
+    enter-active-class="transition-all duration-[600ms] ease-linear"
+    enter-from-class="translate-y-full rounded-t-[100%]"
+    enter-to-class="translate-y-0 rounded-t-0"
+    leave-active-class="transition-all duration-[600ms] ease-linear"
+    leave-from-class="translate-y-0 rounded-b-0"
+    leave-to-class="-translate-y-full rounded-b-[100%]"
   >
     <div 
       v-if="isTransitioning" 
@@ -24,12 +24,22 @@ const { isTransitioning } = usePageTransition()
         leave-from-class="opacity-100 scale-100"
         leave-to-class="opacity-0 scale-95"
       >
-        <div v-if="isTransitioning" class="relative w-24 h-24 md:w-32 md:h-32 flex flex-col items-center gap-6">
-          <NuxtImg 
-            src="/favicon.png" 
-            alt="ConstantCare" 
-            class="w-full h-full object-contain"
-          />
+        <div v-if="isTransitioning" class="relative flex flex-col items-center gap-8">
+          <div class="w-24 h-24 md:w-32 md:h-32">
+            <NuxtImg 
+              src="/favicon.png" 
+              alt="ConstantCare" 
+              class="w-full h-full object-contain"
+            />
+          </div>
+          
+          <div 
+            v-if="targetLanguage"
+            class="font-sans text-xs uppercase tracking-[0.4em] text-on-surface opacity-60"
+            v-motion="{ initial: { opacity: 0, y: 10 }, enter: { opacity: 0.6, y: 0, transition: { delay: 400 } } }"
+          >
+            {{ targetLanguage }}
+          </div>
         </div>
       </Transition>
     </div>

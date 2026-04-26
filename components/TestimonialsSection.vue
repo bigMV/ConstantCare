@@ -11,6 +11,7 @@ const { x, isScrolling } = useScroll(scrollContainer)
 
 // Drag-to-scroll logic
 const isDragging = ref(false)
+const isTouched = ref(false)
 const startX = ref(0)
 const scrollLeftStart = ref(0)
 
@@ -18,6 +19,14 @@ const onMouseDown = (e) => {
   isDragging.value = true
   startX.value = e.pageX - scrollContainer.value.offsetLeft
   scrollLeftStart.value = scrollContainer.value.scrollLeft
+}
+
+const onTouchStart = () => {
+  isTouched.value = true
+}
+
+const onTouchEnd = () => {
+  isTouched.value = false
 }
 
 const onMouseLeave = () => {
@@ -30,7 +39,6 @@ const onMouseUp = () => {
 
 const onMouseMove = (e) => {
   if (!isDragging.value) return
-  e.preventDefault()
   const xPos = e.pageX - scrollContainer.value.offsetLeft
   const walk = (xPos - startX.value) * 2 // Scroll speed multiplier
   scrollContainer.value.scrollLeft = scrollLeftStart.value - walk
@@ -39,7 +47,7 @@ const onMouseMove = (e) => {
 // Auto-scroll logic
 const speed = 0.5
 const { pause, resume } = useRafFn(() => {
-  if (!scrollContainer.value || isHovered.value || isScrolling.value || isDragging.value) return
+  if (!scrollContainer.value || isHovered.value || isScrolling.value || isDragging.value || isTouched.value) return
   
   scrollContainer.value.scrollLeft += speed
   
@@ -84,11 +92,13 @@ const { pause, resume } = useRafFn(() => {
         <!-- Scroll Container -->
         <div 
           ref="scrollContainer"
-          class="flex overflow-x-auto no-scrollbar gap-8 py-8 touch-pan-x cursor-grab active:cursor-grabbing select-none"
+          class="flex overflow-x-auto no-scrollbar gap-8 py-8 touch-auto cursor-grab active:cursor-grabbing select-none"
           @mousedown="onMouseDown"
           @mouseleave="onMouseLeave"
           @mouseup="onMouseUp"
           @mousemove="onMouseMove"
+          @touchstart="onTouchStart"
+          @touchend="onTouchEnd"
         >
           <!-- Double the items for seamless looping -->
           <div 

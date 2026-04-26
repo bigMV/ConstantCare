@@ -12,7 +12,8 @@ const products = {
     price: t('services.m30.price'),
     short: t('services.m30.description_short'),
     long: t('services.m30.description_long'),
-    image: '/images/shop/product_30min.png',
+    image: '/images/shop/therapeutic-massage-gift-voucher-oslo.jpg',
+    alt: t('services.voucher_alt'),
     vipps: 'https://betal.vipps.no/fxi9fh'
   },
   '40-min-massage': {
@@ -22,7 +23,8 @@ const products = {
     price: t('services.m40.price'),
     short: t('services.m40.description_short'),
     long: t('services.m40.description_long'),
-    image: '/images/shop/product_40min.png',
+    image: '/images/shop/therapeutic-massage-gift-voucher-oslo.jpg',
+    alt: t('services.voucher_alt'),
     vipps: 'https://betal.vipps.no/hih29f'
   },
   '50-min-massage': {
@@ -32,7 +34,8 @@ const products = {
     price: t('services.m50.price'),
     short: t('services.m50.description_short'),
     long: t('services.m50.description_long'),
-    image: '/images/shop/product_50min.png',
+    image: '/images/shop/therapeutic-massage-gift-voucher-oslo.jpg',
+    alt: t('services.voucher_alt'),
     vipps: 'https://betal.vipps.no/nlna1k'
   }
 }
@@ -65,7 +68,7 @@ useHead({
             <NuxtImg 
               :src="product.image" 
               class="w-full h-full object-cover" 
-              :alt="product.title"
+              :alt="product.alt"
             />
             <!-- Soft Gradient Overlay -->
             <div class="absolute inset-0 bg-linear-to-t from-on-surface/5 to-transparent pointer-events-none"></div>

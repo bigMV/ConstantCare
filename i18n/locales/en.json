@@ -45,7 +45,8 @@
     },
     "select": "Select",
     "see_more": "See More",
-    "book_now": "Book Now"
+    "book_now": "Book Now",
+    "voucher_alt": "ConstantCare Therapeutic Massage Gift Voucher - Premium Wellness Experience in Oslo"
   },
   "benefits": {
     "eyebrow": "Benefits",
@@ -108,16 +109,28 @@
   },
   "testimonials": [
     {
-      "quote": "Entering ConstantCare feels like leaving the city entirely. The attention to detail, from the scent of the oils to the deliberate pace of the massage, is unmatched in Oslo. Truly a restorative experience.",
-      "author": "E. Johansen"
+      "quote": "Had been experiencing some consistent pain in my left shoulder, so I booked a massage here on a whim. It was hands down the best massage I've ever had! Would definitely recommend to anyone dealing with stiff shoulders 🌟",
+      "author": "Imke H."
     },
     {
-      "quote": "The nervous system reset was exactly what I needed. I haven't felt this grounded in months. The atmosphere is serene and the therapy is world-class.",
-      "author": "M. Sjöberg"
+      "quote": "I had a prenatal massage with Carmen today and it was a truly wonderful experience. She is very skilled, and made me feel completely comfortable and relaxed throughout the session. The massage was perfect, right pressure, and exactly what I needed.",
+      "author": "Elena Brugiati"
     },
     {
-      "quote": "A truly holistic approach to wellness. Not just a massage, but a complete sensory recalibration. Highly recommend for anyone looking for depth and care.",
-      "author": "L. Andersson"
+      "quote": "Carmen has amazing hands! I really had a great pregnancy massage, much needed. Carmen is caring and careful with me and my 37-week belly, she knew where I needed more pressure and where it should be less. She used just the right amount of oil and music. Really recommended!",
+      "author": "Bao Tran Tran"
+    },
+    {
+      "quote": "Carmen is one of the best massage therapists I’ve come across. She has be beautiful mix of deep knowledge combined with an ability to listening with her hands. Highly recommended!",
+      "author": "Anne Solgaard"
+    },
+    {
+      "quote": "I randomly found this place, and gave a try, very good skill and professional! Would come again when I visit Oslo again! For the people first time come to this place, there is a doorbell QR code to scan on the wall, and the next door is a furniture shop, it is very easy to find.",
+      "author": "Laura Lan"
+    },
+    {
+      "quote": "The owner obviously knows what she's doing. I enjoyed how she explained which muscles I had most trouble with, and how she found pressure points and worked on them to release the tensions. She is also offering helpful suggestions on exercise that compliments the massage.",
+      "author": "Simply. Irmina"
     }
   ],
   "footer": {
