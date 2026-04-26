@@ -18,8 +18,17 @@
   --color-surface-highest: #d6d4c9;
   --color-surface-low: #ebeae6;
   --color-surface-lowest: #f5f4f0;
+  --color-surface-container: #ffffff;
 
-  --color-on-surface: #1e1e1e;
+  --color-on-surface: #1b1c1a;
+  --color-on-surface-variant: #444841;
+
+  --color-primary-container: #d5e5ca;
+  --color-on-primary-container: #596751;
+
+  --color-accent: #455846;
+  --color-accent-dim: #5d705d;
+
   --color-error: #8b2f2f;
   --color-white: #ffffff;
   --color-accent-dark: #0B0F0F;
@@ -29,8 +38,11 @@
   --text-lg: clamp(1.125rem, 1rem + 0.5vw, 1.5rem);
   --text-xl: clamp(1.25rem, 1rem + 1vw, 2rem);
   --text-2xl: clamp(1.5rem, 1rem + 2vw, 3rem);
-  --text-3xl: clamp(2rem, 1rem + 4vw, 5rem);
+  --text-3xl: clamp(2rem, 1.5rem + 4vw, 5rem);
   --text-4xl: clamp(2.5rem, 2rem + 5vw, 6.5rem);
+  --text-5xl: clamp(3rem, 2.5rem + 6vw, 8rem);
+  --text-6xl: clamp(3.5rem, 3rem + 8vw, 10rem);
+  --text-7xl: clamp(4rem, 4rem + 10vw, 12rem);
 
   --text-4xl--line-height: 1.1;
 
@@ -58,11 +70,11 @@
     color: var(--color-primary);
   }
 
-  button, 
-  a, 
-  input[type="submit"], 
-  input[type="button"], 
-  label[for], 
+  button,
+  a,
+  input[type="submit"],
+  input[type="button"],
+  label[for],
   .cursor-pointer {
     cursor: pointer;
   }
@@ -79,31 +91,47 @@
   }
 
   /* 4K Optimised Typography with clamp() */
+  /* Fluid Typography mapping for Semantic Headings */
   h1 {
-    font-size: clamp(2.5rem, 7vw, 5rem);
+    font-size: var(--text-3xl);
     line-height: 1.1;
     margin-bottom: 2rem;
-    /* mb-8 */
   }
 
   h2 {
-    font-size: clamp(1.75rem, 5vw, 4rem);
+    font-size: var(--text-2xl);
     line-height: 1.2;
-    margin-bottom: 1rem;
-    /* mb-4 */
+    margin-bottom: 1.5rem;
     opacity: 0.9;
   }
 
   h3 {
-    font-size: clamp(1.25rem, 3.5vw, 2.5rem);
+    font-size: var(--text-xl);
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    font-size: var(--text-lg);
+    line-height: 1.4;
     margin-bottom: 0.75rem;
-    /* mb-3 */
+  }
+
+  h5 {
+    font-size: var(--text-base);
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+
+  h6 {
+    font-size: var(--text-base);
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
   }
 
   p {
-    font-size: clamp(1rem, 1.2vw, 1.35rem);
+    font-size: var(--text-base);
     margin-bottom: 1.5rem;
-    /* mb-6 */
     opacity: 0.8;
   }
 }
@@ -249,7 +277,8 @@
   }
 
   .container-content {
-    max-width: 80rem; /* max-w-7xl equivalent */
+    max-width: 80rem;
+    /* max-w-7xl equivalent */
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -292,45 +321,6 @@
   }
 
   /* --- Text Themes (Editorial System) --- */
-  
-  .display-2xl {
-    font-family: var(--font-sans);
-    font-size: var(--text-7xl);
-    font-weight: 300;
-    letter-spacing: -0.03em;
-    line-height: 1.05;
-  }
-
-  .display-xl {
-    font-family: var(--font-sans);
-    font-size: var(--text-6xl);
-    font-weight: 300;
-    letter-spacing: -0.02em;
-    line-height: 1.1;
-  }
-
-  .heading-xl {
-    font-family: var(--font-sans);
-    font-size: var(--text-4xl);
-    font-weight: 300;
-    letter-spacing: -0.01em;
-    line-height: 1.2;
-  }
-
-  .heading-lg {
-    font-family: var(--font-sans);
-    font-size: var(--text-3xl);
-    font-weight: 300;
-    letter-spacing: -0.01em;
-    line-height: 1.3;
-  }
-
-  .heading-md {
-    font-family: var(--font-sans);
-    font-size: var(--text-2xl);
-    font-weight: 400;
-    letter-spacing: -0.01em;
-  }
 
   .eyebrow {
     font-family: var(--font-sans);
@@ -339,27 +329,6 @@
     letter-spacing: 0.4em;
     color: var(--color-on-surface);
     opacity: 0.6;
-  }
-
-  .body-lg {
-    font-family: var(--font-sans);
-    font-size: var(--text-lg);
-    line-height: 1.7;
-    font-weight: 400;
-  }
-
-  .body-md {
-    font-family: var(--font-sans);
-    font-size: var(--text-base);
-    line-height: 1.6;
-  }
-
-  .button-label {
-    font-family: var(--font-sans);
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
-    font-weight: 500;
   }
 
   .caption {
@@ -384,6 +353,7 @@
   }
 
   @media (min-width: 640px) {
+
     /* Mobile Landscape */
     .related-grid {
       grid-template-columns: repeat(2, 1fr);
@@ -392,6 +362,7 @@
   }
 
   @media (min-width: 768px) {
+
     /* Tablet */
     .related-grid {
       grid-template-columns: repeat(2, 1fr);
@@ -400,6 +371,7 @@
   }
 
   @media (min-width: 1024px) {
+
     /* Desktop */
     .related-grid {
       grid-template-columns: repeat(3, 1fr);
@@ -485,7 +457,7 @@
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-weight: 700;
-    
+
     /* Animation state: Hidden and collapsed */
     max-height: 0;
     opacity: 0;
@@ -538,7 +510,9 @@
     text-shadow: 0 0 15px rgba(76, 100, 85, 0.2);
   }
 
-
+  .material-filled {
+    font-variation-settings: 'FILL' 1;
+  }
 
   /* Page Transitions */
   .page-enter-active,

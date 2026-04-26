@@ -43,9 +43,13 @@
       "description_short": "Den ultimate flukten for hele kroppen. Intensivt fokus på kroniske spenninger.",
       "description_long": "Den ultimate flukten. Denne omfattende 50-minutters massasjen gir rom for en fullstendig kroppsavslapning eller et dypt, intensivt fokus på flere områder med kroniske spenninger. Det er den perfekte gaven til noen som virkelig fortjener å bli skjemt bort, og tilbyr rikelig med tid til å koble fra verden, lindre dyp muskelttretthet og gjenopprette totalt velvære."
     },
-    "select": "Velg"
+    "select": "Velg",
+    "see_more": "Se Mer",
+    "book_now": "Bestill Nå"
   },
   "benefits": {
+    "eyebrow": "Fordeler",
+    "title": "Hvorfor ConstantCare",
     "eco": {
       "title": "Organiske Oljer",
       "text": "Kaldpressede, lokalt hentede botaniske oljer skreddersydd for din huds behov."
@@ -102,10 +106,20 @@
     "message_placeholder": "Hvordan kan vi hjelpe deg?",
     "submit": "Send Melding"
   },
-  "testimonials": {
-    "quote": "Å komme inn til ConstantCare føles som å forlate byen helt. Oppmerksomheten på detaljer, fra duften av oljene til det bevisste tempoet i massasjen, er uovertruffen i Oslo. Virkelig en gjenopprettende opplevelse.",
-    "author": "E. Johansen"
-  },
+  "testimonials": [
+    {
+      "quote": "Å komme inn til ConstantCare føles som å forlate byen helt. Oppmerksomheten på detaljer, fra duften av oljene til det bevisste tempoet i massasjen, er uovertruffen i Oslo. Virkelig en gjenopprettende opplevelse.",
+      "author": "E. Johansen"
+    },
+    {
+      "quote": "Nullstillingen av nervesystemet var akkurat det jeg trengte. Jeg har ikke følt meg så jordet på flere måneder. Atmosfæren er rolig og behandlingen er i verdensklasse.",
+      "author": "M. Sjöberg"
+    },
+    {
+      "quote": "En genuint helhetlig tilnærming til velvære. Ikke bare en massasje, men en komplett sensorisk rekalibrering. Anbefales på det sterkeste for alle som søker dybde og omsorg.",
+      "author": "L. Andersson"
+    }
+  ],
   "footer": {
     "privacy": "Personvern",
     "terms": "Vilkår for bruk",

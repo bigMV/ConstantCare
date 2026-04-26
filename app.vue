@@ -15,4 +15,6 @@ useHead({
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
+  <GlobalTransition />
+  <CookieBanner />
 </template>

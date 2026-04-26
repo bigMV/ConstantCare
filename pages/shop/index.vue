@@ -1,5 +1,6 @@
 <script setup>
-const { t, tm, rt } = useI18n()
+const { t } = useI18n()
+const localePath = useLocalePath()
 
 useHead({
   title: t('nav.services') + ' | ConstantCare Shop',
@@ -34,13 +35,26 @@ const services = computed(() => [
 </script>
 
 <template>
-  <div class="min-h-screen bg-[#faf9f6] pt-32 pb-24">
+  <div class="min-h-screen bg-surface-lowest pt-32 pb-24">
     <div class="max-w-7xl mx-auto px-6 lg:px-12">
       <!-- Header -->
-      <div class="mb-20 text-left max-w-3xl">
-        <span class="eyebrow mb-4 block" v-motion-fade>{{ $t('services.eyebrow') }}</span>
-        <h1 class="heading-xl text-[#1b1c1a] mb-6" v-motion-slide-visible-bottom>{{ $t('services.title') }}</h1>
-        <p class="body-lg text-[#444841]" v-motion-fade>
+      <div class="max-w-3xl space-y-4 mb-20 text-left">
+        <span 
+          class="eyebrow block" 
+          v-motion="{ initial: { opacity: 0, x: -20 }, visibleOnce: { opacity: 0.6, x: 0, transition: { duration: 1000 } } }"
+        >
+          {{ $t('services.eyebrow') }}
+        </span>
+        <HeadingRenderPass 
+          as="h1" 
+          :text="$t('services.title')"
+          class="text-on-surface"
+          :delay="0.3"
+        />
+        <p 
+          class="text-on-surface-variant"
+          v-motion="{ initial: { opacity: 0, y: 20 }, visibleOnce: { opacity: 0.8, y: 0, transition: { delay: 600, duration: 1000 } } }"
+        >
           Grounded in Scandinavian tradition, our therapies are designed to reconnect you with your natural state of balance.
         </p>
       </div>
@@ -50,11 +64,12 @@ const services = computed(() => [
         <NuxtLink 
           v-for="(product, index) in services" 
           :key="product.id"
-          :to="`/shop/${product.id}`"
+          :to="localePath(`/shop/${product.id}`)"
           class="product-card-editorial group"
-          v-motion
-          :initial="{ opacity: 0, y: 40 }"
-          :enter="{ opacity: 1, y: 0, transition: { delay: index * 150 } }"
+          v-motion="{ 
+            initial: { opacity: 0, y: 40 }, 
+            visibleOnce: { opacity: 1, y: 0, transition: { delay: index * 150, duration: 1000 } } 
+          }"
         >
           <div class="image-container">
             <NuxtImg :src="product.image" class="w-full h-full object-cover" />

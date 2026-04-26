@@ -39,7 +39,7 @@ onMounted(() => {
 
 <template>
   <component :is="as" ref="target" v-bind="$attrs" :class="[
-    'transition-all duration-[1500ms] ease-out',
+    'transition-all duration-1500 ease-out',
     isRevealed ? 'opacity-100 blur-0 translate-y-0' : 'opacity-0 blur-[20px] translate-y-4'
   ]" :style="{ transitionDelay: `${delay}s` }">
     <slot>{{ text }}</slot>

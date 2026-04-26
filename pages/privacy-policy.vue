@@ -1,69 +1,114 @@
 <script setup>
-import { Shield as LucideShield, Eye as LucideEye, Lock as LucideLock } from 'lucide-vue-next'
 const { t } = useI18n()
+const localePath = useLocalePath()
 
-useSeoMeta({
-  title: 'Privacy Policy | ConstantCare',
-  description: 'How we handle and protect your personal information.',
+useHead({
+  title: t('footer.privacy') + ' | ConstantCare',
+  meta: [
+    { name: 'description', content: 'Our commitment to protecting your privacy and personal data at ConstantCare.' }
+  ]
 })
 </script>
 
 <template>
-  <div class="pt-40 pb-32 container-content max-w-4xl mx-auto">
-    <header class="mb-20">
-      <div class="eyebrow mb-6">
-        <div class="eyebrow-line"></div>
-        <span class="eyebrow-label">Legal</span>
+  <div class="min-h-screen bg-surface-lowest pt-32 pb-24 selection:bg-accent/10">
+    <div class="max-w-4xl mx-auto px-6 lg:px-12">
+      <!-- Header -->
+      <div class="space-y-4 mb-16 text-left">
+        <span 
+          class="eyebrow block"
+          v-motion="{ initial: { opacity: 0, x: -20 }, visibleOnce: { opacity: 0.6, x: 0, transition: { duration: 1000 } } }"
+        >
+          Legal
+        </span>
+        <HeadingRenderPass 
+          as="h1" 
+          :text="t('footer.privacy')"
+          class="text-on-surface"
+          :delay="0.3"
+        />
+        <p class="text-sm opacity-40 font-sans tracking-widest uppercase">Last Updated: April 2026</p>
       </div>
-      <HeadingRenderPass as="h1" class="text-4xl md:text-6xl mb-8" text="Privacy Policy" />
-      <p class="text-xl text-on-surface/60 leading-relaxed">
-        We are committed to protecting your privacy. This policy explains how we collect and manage your personal data to provide our cleaning services.
-      </p>
-    </header>
 
-    <div class="flex flex-col gap-16">
-      <section class="group">
-        <div class="flex items-center gap-4 mb-6">
-          <LucideEye class="text-primary opacity-40 group-hover:opacity-100 transition-opacity" :size="24" />
-          <h2 class="text-2xl font-serif">1. Information Collection</h2>
-        </div>
-        <div class="pl-10 border-l border-on-surface/5 flex flex-col gap-4 text-on-surface/80">
+      <!-- Content -->
+      <div class="prose prose-neutral max-w-none space-y-12 text-on-surface-variant leading-relaxed font-sans">
+        <section class="space-y-6">
+          <h2 class="text-2xl text-on-surface font-serif">1. Our Commitment</h2>
           <p>
-            We only collect information necessary to provide our services, such as your name, contact details, and cleaning instructions for your property.
+            At ConstantCare, we take your privacy seriously. This policy describes how we collect, use, and protect your personal information when you use our website and book our therapeutic services. We are committed to ensuring that your data is handled in accordance with the General Data Protection Regulation (GDPR) and Norwegian privacy laws.
           </p>
-          <p>
-            We do not sell or share your personal information with third parties for marketing purposes.
-          </p>
-        </div>
-      </section>
+        </section>
 
-      <section class="group">
-        <div class="flex items-center gap-4 mb-6">
-          <LucideLock class="text-primary opacity-40 group-hover:opacity-100 transition-opacity" :size="24" />
-          <h2 class="text-2xl font-serif">2. Data Security</h2>
-        </div>
-        <div class="pl-10 border-l border-on-surface/5 text-on-surface/80">
-          <p>
-            Your information is stored securely on encrypted servers. Our team follows strict security protocols regarding key access and scheduling.
-          </p>
-        </div>
-      </section>
+        <section class="space-y-6">
+          <h2 class="text-2xl text-on-surface font-serif">2. Information We Collect</h2>
+          <p>We may collect the following types of information:</p>
+          <ul class="list-disc pl-6 space-y-3">
+            <li><strong>Personal Identification:</strong> Name, email address, and phone number when you request an inquiry or purchase a voucher.</li>
+            <li><strong>Health Data:</strong> Information about physical conditions or injuries provided during consultations to ensure safe treatment (collected only with your explicit consent).</li>
+            <li><strong>Payment Data:</strong> Transaction details when you purchase through Vipps (we do not store your full credit card information).</li>
+            <li><strong>Usage Data:</strong> Information about how you navigate our site via cookies and similar technologies.</li>
+          </ul>
+        </section>
 
-      <section class="group">
-        <div class="flex items-center gap-4 mb-6">
-          <LucideShield class="text-primary opacity-40 group-hover:opacity-100 transition-opacity" :size="24" />
-          <h2 class="text-2xl font-serif">3. Your Rights</h2>
-        </div>
-        <div class="pl-10 border-l border-on-surface/5 text-on-surface/80">
+        <section class="space-y-6">
+          <h2 class="text-2xl text-on-surface font-serif">3. How We Use Your Data</h2>
+          <p>Your information is used to:</p>
+          <ul class="list-disc pl-6 space-y-3">
+            <li>Facilitate bookings and confirm appointments.</li>
+            <li>Process payments for gift vouchers and services.</li>
+            <li>Customize treatments based on your physical needs.</li>
+            <li>Improve our website experience and customer service.</li>
+            <li>Comply with legal and accounting obligations in Norway.</li>
+          </ul>
+        </section>
+
+        <section class="space-y-6">
+          <h2 class="text-2xl text-on-surface font-serif">4. Data Retention</h2>
           <p>
-            You have the right to access, correct, or request the deletion of your personal data at any time by contacting us directly.
+            We retain your personal data only for as long as necessary to fulfill the purposes for which it was collected, including for the purposes of satisfying any legal, accounting, or reporting requirements. For safety reasons, health consultation notes may be kept for a period to track your progress and ensure continuity of care.
           </p>
+        </section>
+
+        <section class="space-y-6">
+          <h2 class="text-2xl text-on-surface font-serif">5. Your Rights</h2>
+          <p>Under GDPR, you have the right to:</p>
+          <ul class="list-disc pl-6 space-y-3">
+            <li>Access the personal data we hold about you.</li>
+            <li>Request correction of inaccurate data.</li>
+            <li>Request deletion of your data (the "right to be forgotten").</li>
+            <li>Object to or restrict the processing of your data.</li>
+            <li>Withdraw consent at any time for health-related data processing.</li>
+          </ul>
+        </section>
+
+        <section class="space-y-6">
+          <h2 class="text-2xl text-on-surface font-serif">6. Contact Us</h2>
+          <p>
+            If you have any questions about this Privacy Policy or our data practices, please reach out to us at:
+            <br/><br/>
+            <strong>ConstantCare</strong><br/>
+            Email: hey@constantcare.no<br/>
+            Address: Majorstuveien 31 B, 0367 Oslo, Norway
+          </p>
+        </section>
+
+        <div class="pt-12 border-t border-on-surface/5">
+          <NuxtLink :to="localePath('/')" class="text-sm font-medium uppercase tracking-widest text-accent hover:text-accent-dim transition-colors group">
+            Back to Home
+          </NuxtLink>
         </div>
-      </section>
-      
-      <NuxtLink to="/" class="btn btn-primary !self-start mt-12">
-        Return to Home
-      </NuxtLink>
+      </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+h2 {
+  opacity: 0.9;
+  letter-spacing: -0.01em;
+}
+p, li {
+  font-size: var(--text-base);
+  opacity: 0.85;
+}
+</style>

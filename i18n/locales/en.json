@@ -43,9 +43,13 @@
       "description_short": "The ultimate full-body escape. Intensive focus on chronic tension.",
       "description_long": "The ultimate escape. This comprehensive 50-minute massage allows for a full-body relaxation experience or a deep, intensive focus on multiple areas of chronic tension. It is the perfect gift for someone who truly deserves to be pampered, offering ample time to disconnect from the world, relieve deep-seated muscle fatigue, and restore total well-being."
     },
-    "select": "Select"
+    "select": "Select",
+    "see_more": "See More",
+    "book_now": "Book Now"
   },
   "benefits": {
+    "eyebrow": "Benefits",
+    "title": "Why ConstantCare",
     "eco": {
       "title": "Organic Oils",
       "text": "Cold-pressed, locally sourced botanical oils tailored to your skin's needs."
@@ -102,10 +106,20 @@
     "message_placeholder": "How can we help you?",
     "submit": "Send Message"
   },
-  "testimonials": {
-    "quote": "Entering ConstantCare feels like leaving the city entirely. The attention to detail, from the scent of the oils to the deliberate pace of the massage, is unmatched in Oslo. Truly a restorative experience.",
-    "author": "E. Johansen"
-  },
+  "testimonials": [
+    {
+      "quote": "Entering ConstantCare feels like leaving the city entirely. The attention to detail, from the scent of the oils to the deliberate pace of the massage, is unmatched in Oslo. Truly a restorative experience.",
+      "author": "E. Johansen"
+    },
+    {
+      "quote": "The nervous system reset was exactly what I needed. I haven't felt this grounded in months. The atmosphere is serene and the therapy is world-class.",
+      "author": "M. Sjöberg"
+    },
+    {
+      "quote": "A truly holistic approach to wellness. Not just a massage, but a complete sensory recalibration. Highly recommend for anyone looking for depth and care.",
+      "author": "L. Andersson"
+    }
+  ],
   "footer": {
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",

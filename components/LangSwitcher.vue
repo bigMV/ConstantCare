@@ -1,13 +1,16 @@
 <script setup>
 const { locale, setLocale } = useI18n()
+const { triggerTransition } = usePageTransition()
+const router = useRouter()
 
-const toggleLocale = () => {
+const toggleLocale = async () => {
   const next = locale.value === 'en' ? 'no' : 'en'
-  // Clear hash to prevent browser auto-scroll on locale change
+  
   if (window.location.hash) {
-    window.history.replaceState(null, '', window.location.pathname)
+    await router.replace({ hash: '' })
   }
-  setLocale(next)
+  
+  triggerTransition(() => setLocale(next))
 }
 </script>
 
